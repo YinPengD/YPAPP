@@ -18,23 +18,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    //1.创建窗口
+    // ------1.创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     RootViewController *rootVC = [[RootViewController alloc]init];
-    //设置窗口的根控制器
+    // ------2.设置窗口的根控制器
     //UIViewController *vc = [[UIViewController alloc]init];
     //vc.view.backgroundColor = [UIColor redColor];
-    //创建导航控制器
+    // ------3.创建导航控制器
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:rootVC];
     self.window.rootViewController = nav;
     //initWithRootViewController底层调用pushViewController
     //把一个控制器添加到导航控制器中
    // [nav pushViewController:vc animated:YES];
-    //自定义颜色
+    // ------自定义颜色
     UIColor *barColor = [UIColor colorWithRed:0.7 green:0 blue:0 alpha:0.5];
-    //修改颜色
+    // ------修改颜色
     nav.navigationBar.barTintColor = barColor;
-    //3.显示窗口
+    //------4.显示窗口
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -10,22 +10,25 @@
 #import "YPtgMode.h"
 #import "Masonry.h"
 @interface YPTGView()
-//图标
+//** 图标 */
 @property(nonatomic,weak) UIImageView  *iconImageView;
-//标题
+//** 标题 */
 @property(nonatomic,weak)UILabel *titleLabel;
-//价格
+//** 价格 */
 @property(nonatomic,weak)UILabel *priceLabel;
-//购买数
+//** 购买数 */
 @property(nonatomic,weak)UILabel *buyCountLabel;
 @end
 @implementation YPTGView
-//在这个方法内添加所有的子控件（一般在initWithFrame中添加子控件,但是tableviewcell调用的是initWithSyle方法
+
+/**
+ 在这个方法内添加所有的子控件（一般在initWithFrame中添加子控件,但是tableviewcell调用的是initWithSyle方法
+ */
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
-    //自定义系统构造方法需要先调用父类
+    // ------自定义系统构造方法需要先调用父类
     if(self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]){
         CGFloat space = 10;
-        //设置图片
+        // ------设置图片
         UIImageView *iconImageView = [[UIImageView alloc]init];
         [self.contentView addSubview:iconImageView];
         self.iconImageView =iconImageView;
@@ -34,7 +37,7 @@
             make.bottom.equalTo(self.contentView).offset(-space);
             make.width.equalTo(@80);
         }];
-        //设置标题
+        // ------设置标题
         UILabel *titleLabel = [[UILabel alloc]init];
         [self.contentView addSubview:titleLabel];
         self.titleLabel =titleLabel;
@@ -44,7 +47,7 @@
             make.right.equalTo(self.contentView).offset(-space);
             make.height.equalTo(@20);
         }];
-        //设值价格
+        // ------设值价格
         UILabel *priceLabel = [[UILabel alloc]init];
         priceLabel.textColor = [UIColor orangeColor];
         [self.contentView addSubview:priceLabel];
@@ -54,7 +57,7 @@
             make.bottom.equalTo(iconImageView.mas_bottom);
             make.size.equalTo(self.constraints).sizeOffset(CGSizeMake(100, 15));
         }];
-        //设置购买数
+        // ------设置购买数
         UILabel *buyCountLabel = [[UILabel alloc]init];
         buyCountLabel.textAlignment = NSTextAlignmentRight;
         buyCountLabel.textColor = [UIColor lightGrayColor];
@@ -69,8 +72,12 @@
     }
     return self;
 }
-//在这对自动义控件的子控件设置位置
-//重写属性的set方法以设置子控件的数据
+
+
+/**
+ 重写属性的set方法以设置子控件的数据
+ @param tg 团购数据
+ */
 -(void)setTg:(YPtgMode *)tg{
     _tg = tg; //给成员变量赋值，后面可能会用到
     self.iconImageView.image = [UIImage imageNamed:tg.icon];

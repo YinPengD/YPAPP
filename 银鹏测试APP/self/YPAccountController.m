@@ -6,16 +6,17 @@
 //  Copyright © 2017年 银鹏. All rights reserved.
 //
 
-#import "YPAccount.h"
+#import "YPAccountController.h"
 #import "YPSetting.h"
-@interface YPAccount ()
+@interface YPAccountController ()
 
 @end
 
-@implementation YPAccount
+@implementation YPAccountController
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 1;
 }

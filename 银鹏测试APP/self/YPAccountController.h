@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YPAccount : UITableViewController
+@interface YPAccountController : UITableViewController
 
 @end

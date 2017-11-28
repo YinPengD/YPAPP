@@ -10,10 +10,10 @@
 
 @implementation YPtgMode
 
-//实现外界构造方法
+// ------实现外界构造方法
 +(instancetype)tgWithDict:(NSDictionary *)dict{
     YPtgMode *mode =[[self alloc]init];
-    [mode setValuesForKeysWithDictionary:dict];// 因为数据整齐可以用键值对进行赋值
+    [mode setValuesForKeysWithDictionary:dict];  //因为数据整齐可以用键值对进行赋值
     return mode;
 }
 

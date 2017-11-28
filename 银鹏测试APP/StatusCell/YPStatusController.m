@@ -16,7 +16,10 @@
 
 @implementation YPStatusController
 
-//用第三方框架进行字典转模型
+
+/**
+ 用第三方框架进行字典转模型
+ */
 -(NSArray *)statuses{
     if (!_statuses) {
         _statuses  = [YPStatus mj_objectArrayWithFilename:@"statuses.plist"];
@@ -26,7 +29,7 @@
 NSString *ID1 = @"status";
 - (void)viewDidLoad {
     [super viewDidLoad]; 
-    //注册标志
+    // ------注册标志
     [self.tableView registerClass:[YPStatusCell class] forCellReuseIdentifier:ID1];
 }
 
@@ -34,13 +37,19 @@ NSString *ID1 = @"status";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
      return self.statuses.count;
 }
-//设置每一行的数据源
+
+/**
+ 设置每一行的数据源
+ */
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     YPStatusCell *cell = [tableView dequeueReusableCellWithIdentifier:ID1];
     cell.status = self.statuses[indexPath.row];
     return cell;
 }
-// ------设置每一行的不同高度
+
+/**
+ 设置每一行的不同高度
+ */
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     YPStatus *status = self.statuses[indexPath.row];
 // ------通过在设置cell的的布局之前提前计算cell的高度设置不同高度（因为这个函数会在设置数据之前调用)

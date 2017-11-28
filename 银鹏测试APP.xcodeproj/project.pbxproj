@@ -40,10 +40,10 @@
 		71280E041FB206F70090065E /* ViewController+MASAdditions.h in Sources */ = {isa = PBXBuildFile; fileRef = 71280DEB1FB205F60090065E /* ViewController+MASAdditions.h */; };
 		71280E051FB206F70090065E /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 71280DEC1FB205F60090065E /* ViewController+MASAdditions.m */; };
 		713ECE671FC6EADA0022CDFD /* statuses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 713ECE661FC6E8400022CDFD /* statuses.plist */; };
-		714B26B71FAF343100356E99 /* YPAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 714B26B61FAF343100356E99 /* YPAccount.m */; };
+		714B26B71FAF343100356E99 /* YPAccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 714B26B61FAF343100356E99 /* YPAccountController.m */; };
 		714B26BC1FAF3B9700356E99 /* YPSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 714B26BB1FAF3B9700356E99 /* YPSetting.m */; };
 		714B26BE1FAF3BB600356E99 /* YPSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714B26BD1FAF3BB600356E99 /* YPSetting.storyboard */; };
-		714B26C21FAF467800356E99 /* YPAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714B26C11FAF467800356E99 /* YPAccount.storyboard */; };
+		714B26C21FAF467800356E99 /* YPAccountController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714B26C11FAF467800356E99 /* YPAccountController.storyboard */; };
 		7153CDA91FA34F17003A3375 /* dict_mode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7153CDA81FA34F17003A3375 /* dict_mode.m */; };
 		7153CDAC1FA35071003A3375 /* Mode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7153CDAB1FA35071003A3375 /* Mode.m */; };
 		7153CDAE1FA488D0003A3375 /* list.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7153CDAD1FA488D0003A3375 /* list.plist */; };
@@ -142,12 +142,12 @@
 		714B26AA1FAC4A8B00356E99 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
 		714B26AB1FAC4A8B00356E99 /* NSString+MJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
 		714B26AC1FAC4A8B00356E99 /* NSString+MJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
-		714B26B51FAF343100356E99 /* YPAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPAccount.h; sourceTree = "<group>"; };
-		714B26B61FAF343100356E99 /* YPAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPAccount.m; sourceTree = "<group>"; };
+		714B26B51FAF343100356E99 /* YPAccountController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPAccountController.h; sourceTree = "<group>"; };
+		714B26B61FAF343100356E99 /* YPAccountController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPAccountController.m; sourceTree = "<group>"; };
 		714B26BA1FAF3B9700356E99 /* YPSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPSetting.h; sourceTree = "<group>"; };
 		714B26BB1FAF3B9700356E99 /* YPSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPSetting.m; sourceTree = "<group>"; };
 		714B26BD1FAF3BB600356E99 /* YPSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPSetting.storyboard; sourceTree = "<group>"; };
-		714B26C11FAF467800356E99 /* YPAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPAccount.storyboard; sourceTree = "<group>"; };
+		714B26C11FAF467800356E99 /* YPAccountController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPAccountController.storyboard; sourceTree = "<group>"; };
 		7153CDA71FA34F17003A3375 /* dict_mode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dict_mode.h; sourceTree = "<group>"; };
 		7153CDA81FA34F17003A3375 /* dict_mode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dict_mode.m; sourceTree = "<group>"; };
 		7153CDAA1FA35071003A3375 /* Mode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mode.h; sourceTree = "<group>"; };
@@ -325,9 +325,9 @@
 		714B26B41FAF33D900356E99 /* self */ = {
 			isa = PBXGroup;
 			children = (
-				714B26B51FAF343100356E99 /* YPAccount.h */,
-				714B26B61FAF343100356E99 /* YPAccount.m */,
-				714B26C11FAF467800356E99 /* YPAccount.storyboard */,
+				714B26B51FAF343100356E99 /* YPAccountController.h */,
+				714B26B61FAF343100356E99 /* YPAccountController.m */,
+				714B26C11FAF467800356E99 /* YPAccountController.storyboard */,
 				714B26BA1FAF3B9700356E99 /* YPSetting.h */,
 				714B26BB1FAF3B9700356E99 /* YPSetting.m */,
 				714B26BD1FAF3BB600356E99 /* YPSetting.storyboard */,
@@ -418,7 +418,7 @@
 				7109CC291F3859C500462EA8 /* TwoViewController.xib in Resources */,
 				7153CDC01FAB45EA003A3375 /* YPTGViewController.storyboard in Resources */,
 				71EA123C1F454178005B52FC /* Assets.xcassets in Resources */,
-				714B26C21FAF467800356E99 /* YPAccount.storyboard in Resources */,
+				714B26C21FAF467800356E99 /* YPAccountController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,7 +481,7 @@
 				719916411FB1C99F005056F7 /* YPStatusCell.m in Sources */,
 				7153CDBC1FAAB3B0003A3375 /* YPTGViewController.m in Sources */,
 				7199163D1FB1C7A1005056F7 /* YPStatus.m in Sources */,
-				714B26B71FAF343100356E99 /* YPAccount.m in Sources */,
+				714B26B71FAF343100356E99 /* YPAccountController.m in Sources */,
 				7153CDAC1FA35071003A3375 /* Mode.m in Sources */,
 				7153CDB51FAA042E003A3375 /* YPTGView.m in Sources */,
 				7109CC101F38175200462EA8 /* AppDelegate.m in Sources */,
