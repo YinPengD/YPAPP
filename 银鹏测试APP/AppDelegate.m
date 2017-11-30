@@ -18,12 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    // ------1.创建窗口
+    // ------1.创建窗口（强引用窗口，不让窗口消失），然后设置尺寸
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     RootViewController *rootVC = [[RootViewController alloc]init];
     // ------2.设置窗口的根控制器
-    //UIViewController *vc = [[UIViewController alloc]init];
-    //vc.view.backgroundColor = [UIColor redColor];
     // ------3.创建导航控制器
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:rootVC];
     self.window.rootViewController = nav;

@@ -72,7 +72,41 @@
                 </segmentedControl>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="32" y="-606"/>
+            <point key="canvasLocation" x="-30" y="-601"/>
         </view>
+        <tabBarController id="DfX-kg-n1b">
+            <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tBR-CX-cgg">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </tabBar>
+            <viewControllers>
+                <viewController id="17d-nj-HPD">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pg9-9e-EEp"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dpi-wu-7NS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4sa-AN-4mE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="HIh-4a-BXL"/>
+                </viewController>
+                <viewController id="zwP-nf-iTE">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="312-hU-VmX"/>
+                        <viewControllerLayoutGuide type="bottom" id="hNM-VN-0Zf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cvN-DH-x4S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="YhV-5c-uEo"/>
+                </viewController>
+            </viewControllers>
+            <point key="canvasLocation" x="-490" y="459"/>
+        </tabBarController>
     </objects>
 </document>
