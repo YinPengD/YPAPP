@@ -12,7 +12,7 @@
         <!--Setting-->
         <scene sceneID="DqT-th-afH">
             <objects>
-                <tableViewController storyboardIdentifier="123" id="97K-zp-vom" customClass="YPSetting" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="01" id="97K-zp-vom" customClass="YPSetting" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="1Qn-d0-Age">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

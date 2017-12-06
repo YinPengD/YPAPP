@@ -7,6 +7,7 @@
 //
 
 #import "DiscoverViewController.h"
+#import "YPDiscoverTabBarViewController.h"
 #import "YPPageView.h"
 #import "Masonry.h"
 @interface DiscoverViewController ()
@@ -15,33 +16,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    // ------调整导栏颜色
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:186.0/255 green:37.0/255 blue:0/255 alpha:1.0];
     // ------设置导航条的内容，由栈顶控制器决定
-    //self.navigationItem.title = @"根控制器" ;
-    // ------创建一个文本框
+    // 创建一个文本框
     UITextField  *textField = [[UITextField alloc]initWithFrame:CGRectMake(10, 8, 200, 25)];
-    // ------设置文本框背景颜色
+    // 设置文本框背景颜色
     textField.backgroundColor = [UIColor whiteColor];
-    // ------设置文本框样式
+    // 设置文本框样式
     textField.borderStyle = UITextBorderStyleRoundedRect;
-    // ------设置水印文字
+    // 设置水印文字
     textField.placeholder =@"搜索音乐、歌词、电台";
-    // ------设置paceholder的属性
+    // 设置paceholder的属性
     [textField setValue:[UIFont boldSystemFontOfSize:13] forKeyPath:@"_placeholderLabel.font"];
     self.navigationItem.titleView = textField;
     // ------设置文本框左视图
     UIImageView *imageview = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"Search" ]];
     textField.leftView = imageview;
     textField.leftViewMode = UITextFieldViewModeAlways;
-    // ------设置左侧是一个自定义的view（位置不需要自己决定但是大小要自己决定
+    // 设置左侧是一个自定义的view（位置不需要自己决定但是大小要自己决定
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn1 setImage:[UIImage imageNamed:@"Mic"] forState:UIControlStateNormal];
     [btn1 setImage:[UIImage imageNamed:@"Mic"] forState:UIControlStateHighlighted];
-    // ------让按钮自定义大小
+    // 让按钮自定义大小
     [btn1 sizeToFit]; 
-    // ------监控按钮事件
+    // 监控按钮事件
     [btn1 addTarget:self action: @selector(btn1Click) forControlEvents:UIControlEventTouchUpInside];
-    // ------添加
+    // 添加
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn1];
     
     // ------设置右侧自定义button
@@ -62,15 +63,20 @@
     YPPageView *pageView =  [YPPageView pageView]; //注意：这样的写法存在有性能问题1.如果照片数量大了，加载的图片数量就过多了2.创建的image过多
     pageView.imageNames  = @[@"img_01",@"img_02",@"img_03",@"img_04"];
     [self.view addSubview:pageView];
-    // -------对pageView进行约束
+    // 对pageView进行约束
     pageView.translatesAutoresizingMaskIntoConstraints  = NO;
     [pageView mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.right.left.offset(0);
         make.top.mas_equalTo(segmented.mas_bottom).offset(0);
         make.bottom.mas_equalTo(segmented.mas_bottom).offset(134);
     }];
-    //背景默认为黑色
+    // -----设置View背景默认为黑色
     self.view.backgroundColor = [UIColor whiteColor];
+    // ------创建Discover界面的TabBar切换选项卡
+    /*
+    YPDiscoverTabBarViewController *disBar  = [[YPDiscoverTabBarViewController alloc]init];
+    disBar.
+     */
 }
 #pragma mark - *************** 监控点击与跳转事件
 //监控按钮1的事件
@@ -82,7 +88,7 @@
 }
 /*
 - (IBAction)JumpNext:(id)sender {
-    //跳转控制区器
+    //跳转控制区器 
     //self.navigationController获取当前所在导航控制器
     MyMusicViewController *twoVC = [[MyMusicViewController alloc]init];
     [self.navigationController pushViewController:twoVC animated:YES];
