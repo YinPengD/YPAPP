@@ -79,8 +79,8 @@
 		71BC1F471FD80AA70026117D /* YPRefurbishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BC1F461FD80AA70026117D /* YPRefurbishViewController.m */; };
 		71BC1F4D1FD8129A0026117D /* YPRefurbishTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BC1F4C1FD8129A0026117D /* YPRefurbishTableViewCell.m */; };
 		71BC1F511FD813130026117D /* YPWine.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BC1F501FD813130026117D /* YPWine.m */; };
-		71BC1F561FD83C1E0026117D /* YPRefurbishView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BC1F551FD83BDE0026117D /* YPRefurbishView.storyboard */; };
 		71BC1F571FD83C400026117D /* wine.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71BC1F521FD81CE90026117D /* wine.plist */; };
+		71CA5A131FD970B2004AF2F4 /* YPRefurbishView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71CA5A121FD97072004AF2F4 /* YPRefurbishView.storyboard */; };
 		71D68E761F90F49100932B83 /* YPPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71D68E751F90F49100932B83 /* YPPageView.xib */; };
 		71EA123C1F454178005B52FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71EA123B1F454178005B52FC /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -180,7 +180,7 @@
 		71BC1F4F1FD813130026117D /* YPWine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPWine.h; sourceTree = "<group>"; };
 		71BC1F501FD813130026117D /* YPWine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPWine.m; sourceTree = "<group>"; };
 		71BC1F521FD81CE90026117D /* wine.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = wine.plist; sourceTree = "<group>"; };
-		71BC1F551FD83BDE0026117D /* YPRefurbishView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPRefurbishView.storyboard; sourceTree = "<group>"; };
+		71CA5A121FD97072004AF2F4 /* YPRefurbishView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPRefurbishView.storyboard; sourceTree = "<group>"; };
 		71D68E751F90F49100932B83 /* YPPageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YPPageView.xib; sourceTree = "<group>"; };
 		71EA123B1F454178005B52FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -571,8 +571,8 @@
 				71BC1F451FD80AA70026117D /* YPRefurbishViewController.h */,
 				71BC1F461FD80AA70026117D /* YPRefurbishViewController.m */,
 				71BC1F4B1FD8129A0026117D /* YPRefurbishTableViewCell.h */,
+				71CA5A121FD97072004AF2F4 /* YPRefurbishView.storyboard */,
 				71BC1F4C1FD8129A0026117D /* YPRefurbishTableViewCell.m */,
-				71BC1F551FD83BDE0026117D /* YPRefurbishView.storyboard */,
 				71BC1F4F1FD813130026117D /* YPWine.h */,
 				71BC1F501FD813130026117D /* YPWine.m */,
 			);
@@ -638,8 +638,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71CA5A131FD970B2004AF2F4 /* YPRefurbishView.storyboard in Resources */,
 				71BC1F571FD83C400026117D /* wine.plist in Resources */,
-				71BC1F561FD83C1E0026117D /* YPRefurbishView.storyboard in Resources */,
 				713ECE671FC6EADA0022CDFD /* statuses.plist in Resources */,
 				7153CDC31FAB5CE6003A3375 /* tgs.plist in Resources */,
 				7153CDAE1FA488D0003A3375 /* list.plist in Resources */,
