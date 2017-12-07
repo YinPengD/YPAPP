@@ -56,35 +56,11 @@
                                     <constraint firstItem="NAp-Xp-hHk" firstAttribute="centerX" secondItem="Fkw-Lj-Nji" secondAttribute="centerX" id="zJC-lg-2Qk"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="COs-Tc-4gl">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="72Y-NR-pYh">
                                 <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4vv-Pd-crz">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vix-gn-KHN">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bBX-kU-FyH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <connections>
-                                                <outlet property="dataSource" destination="8R5-fV-1kY" id="7pD-HQ-7ml"/>
-                                            </connections>
-                                        </tableView>
-                                        <connections>
-                                            <outlet property="dataSource" destination="8R5-fV-1kY" id="Vfj-jb-vvb"/>
-                                        </connections>
-                                    </tableView>
-                                    <connections>
-                                        <outlet property="dataSource" destination="8R5-fV-1kY" id="LDz-Ev-R8D"/>
-                                    </connections>
-                                </tableView>
                                 <connections>
-                                    <outlet property="dataSource" destination="8R5-fV-1kY" id="YEA-9b-aY1"/>
+                                    <outlet property="dataSource" destination="8R5-fV-1kY" id="oac-GR-reM"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -92,16 +68,16 @@
                         <constraints>
                             <constraint firstItem="Fkw-Lj-Nji" firstAttribute="leading" secondItem="UaW-ST-wcB" secondAttribute="leading" id="8Z2-iq-9oK"/>
                             <constraint firstItem="Fkw-Lj-Nji" firstAttribute="top" secondItem="UaW-ST-wcB" secondAttribute="top" id="H4B-Cv-fsk"/>
-                            <constraint firstItem="COs-Tc-4gl" firstAttribute="leading" secondItem="UaW-ST-wcB" secondAttribute="leading" id="a9U-NS-Gbh"/>
-                            <constraint firstItem="COs-Tc-4gl" firstAttribute="bottom" secondItem="UaW-ST-wcB" secondAttribute="bottom" id="e7y-v1-pT5"/>
-                            <constraint firstItem="COs-Tc-4gl" firstAttribute="trailing" secondItem="UaW-ST-wcB" secondAttribute="trailing" id="kD0-oH-qdu"/>
+                            <constraint firstItem="72Y-NR-pYh" firstAttribute="leading" secondItem="UaW-ST-wcB" secondAttribute="leading" id="eEZ-pB-I3K"/>
+                            <constraint firstItem="UaW-ST-wcB" firstAttribute="trailing" secondItem="72Y-NR-pYh" secondAttribute="trailing" id="ph8-yW-ClR"/>
                             <constraint firstItem="Fkw-Lj-Nji" firstAttribute="trailing" secondItem="UaW-ST-wcB" secondAttribute="trailing" id="s60-g3-VST"/>
-                            <constraint firstItem="COs-Tc-4gl" firstAttribute="top" secondItem="Fkw-Lj-Nji" secondAttribute="bottom" id="x5D-AR-GB4"/>
+                            <constraint firstItem="UaW-ST-wcB" firstAttribute="bottom" secondItem="72Y-NR-pYh" secondAttribute="bottom" id="uZb-2k-Wsb"/>
+                            <constraint firstItem="72Y-NR-pYh" firstAttribute="top" secondItem="Fkw-Lj-Nji" secondAttribute="bottom" id="wxS-1x-GDQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UaW-ST-wcB"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="bBX-kU-FyH" id="uUu-aX-Dbn"/>
+                        <outlet property="tableView" destination="72Y-NR-pYh" id="cFY-ZX-8DY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8py-96-rhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
