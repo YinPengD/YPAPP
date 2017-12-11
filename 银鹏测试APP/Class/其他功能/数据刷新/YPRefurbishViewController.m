@@ -10,7 +10,7 @@
 #import "YPRefurbishTableViewCell.h"
 #import "MJExtension.h"
 #import "YPWine.h"
-@interface YPRefurbishViewController ()<UITableViewDataSource>   //注意如果不是继承tableViewcontroller 就需要添加数据代理与在storyboard中设置数据源
+@interface YPRefurbishViewController ()<UITableViewDataSource,UITableViewDelegate>   //注意如果不是继承tableViewcontroller 就需要添加数据代理与在storyboard中设置数据源
 /**酒数据*/
 @property (nonatomic,strong)   NSMutableArray *wineArray;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -29,6 +29,8 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // tableVIew在编辑模式下中的可以多选，
+    self.tableView.allowsMultipleSelectionDuringEditing = YES;
 }
 
 /**
@@ -41,7 +43,10 @@
     wine.image = @"newWine";
     [self.wineArray insertObject:wine atIndex:0];
     // 使tableView强制刷新
-    [self.tableView reloadData];
+    //[self.tableView reloadData];
+    // 局部刷新
+    NSArray *indexPath = @[[NSIndexPath indexPathForRow:0 inSection:0]];
+    [self.tableView insertRowsAtIndexPaths:indexPath withRowAnimation:(UITableViewRowAnimationRight)];
 }
 
 /**
@@ -50,15 +55,26 @@
 - (IBAction)Update {
     YPWine *wine1 = self.wineArray[0];
     wine1.money = @"100";
-    [self.tableView reloadData];
+    // 全局刷新
+    //[self.tableView reloadData];
+    // 局部刷新
+    NSArray *indexPath = @[[NSIndexPath indexPathForRow:0 inSection:0]];
+    [self.tableView reloadRowsAtIndexPaths:indexPath withRowAnimation:UITableViewRowAnimationFade];
 }
 
 /**
  移除按钮
  */
 - (IBAction)remove {
-    [self.wineArray removeObjectAtIndex:0];
-    [self.tableView   reloadData];
+    //[self.wineArray removeObjectAtIndex:0];
+    //[self.tableView   reloadData];
+    //NSArray *indexPath = @[[NSIndexPath indexPathForRow:0 inSection:0]];
+    //[self.tableView deleteRowsAtIndexPaths:indexPath withRowAnimation:UITableViewRowAnimationLeft];
+    // 进入编辑模式
+    //self.tableView.editing = !self.tableView.editing;   // 取反
+    [self.tableView setEditing:!self.tableView.isEditing animated:YES];
+    // 不要一边遍历一边删除元素，因为元素的索引可能会发生变化
+    
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -74,5 +90,37 @@
     cell.wine = self.wineArray[indexPath.row];
     return cell;
 }
+#pragma mark - *************** 设置右划删除代理事件
 
+/**
+ 设置右划删除事件
+ 当点击删除按钮时会调用里面的方法
+ */
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.wineArray removeObjectAtIndex:indexPath.row];
+    [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
+}
+
+/**
+ 设置右划删除按钮的标题
+ */
+
+-(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return @"删除";
+}
+/**
+ 设置多个右划按钮
+ */
+-(NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewRowAction *action = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"关注" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        // 默认当右划时进入tableView的编辑模式,如果要使的tableView右划取消的平滑好看，就要取消退出编辑模式
+        self.tableView.editing =NO;
+    }];
+    UITableViewRowAction *action1 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        [self.wineArray removeObjectAtIndex:indexPath.row];
+        [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+    }];
+    return @[action1,action];
+}
 @end

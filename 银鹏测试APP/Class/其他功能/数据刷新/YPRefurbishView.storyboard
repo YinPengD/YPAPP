@@ -61,6 +61,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="8R5-fV-1kY" id="oac-GR-reM"/>
+                                    <outlet property="delegate" destination="8R5-fV-1kY" id="QPb-ds-vhB"/>
                                 </connections>
                             </tableView>
                         </subviews>
