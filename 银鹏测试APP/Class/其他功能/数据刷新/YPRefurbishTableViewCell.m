@@ -8,8 +8,10 @@
 
 #import "YPRefurbishTableViewCell.h"
 #import "YPWine.h"
-@implementation YPRefurbishTableViewCell
+@interface YPRefurbishTableViewCell ()
+@end
 
+@implementation YPRefurbishTableViewCell
 -(void)setWine:(YPWine *)wine{
     _wine = wine;
     self.textLabel.text = wine.name;

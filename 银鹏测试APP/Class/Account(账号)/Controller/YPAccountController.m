@@ -9,6 +9,7 @@
 #import "YPAccountController.h"
 #import "MyMusicViewController.h"
 #import "YPRefurbishViewController.h"
+#import "YPShoppingViewController.h"
 #import "YPSetting.h"
 @interface YPAccountController ()
 
@@ -20,7 +21,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return 4;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -35,6 +36,9 @@
         }else if (indexPath.row == 2){
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell.textLabel.text = @"数据刷新";
+        }else if (indexPath.row == 3){
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            cell.textLabel.text = @"购物车";
         }
     }
     return cell;
@@ -53,7 +57,11 @@
         }else if (indexPath.row == 2){
             UIStoryboard *thr = [UIStoryboard storyboardWithName:@"YPRefurbishView" bundle:nil];
             YPRefurbishViewController *Refurbish = [thr instantiateViewControllerWithIdentifier:@"02"];
-            [self .navigationController pushViewController:Refurbish animated:YES];
+            [self.navigationController pushViewController:Refurbish animated:YES];
+        }else if (indexPath.row == 3){
+            UIStoryboard *four = [UIStoryboard storyboardWithName:@"YPShoppingView" bundle:nil];
+            YPShoppingViewController *Shopping = [four instantiateViewControllerWithIdentifier:@"03"];
+            [self.navigationController pushViewController:Shopping animated:YES];
         }
     }
 }

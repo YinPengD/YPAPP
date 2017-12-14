@@ -37,9 +37,17 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uP-Bu-SbL">
                                         <rect key="frame" x="336" y="10" width="31" height="30"/>
-                                        <state key="normal" title="删除"/>
+                                        <state key="normal" title="编辑"/>
                                         <connections>
                                             <action selector="remove" destination="8R5-fV-1kY" eventType="touchUpInside" id="mbC-qf-frN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BW-hD-Hn2">
+                                        <rect key="frame" x="8" y="10" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="删除"/>
+                                        <connections>
+                                            <action selector="delete" destination="8R5-fV-1kY" eventType="touchUpInside" id="JXD-cz-U3K"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -78,7 +86,10 @@
                         <viewLayoutGuide key="safeArea" id="UaW-ST-wcB"/>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="B80-nl-Kxh" id="2ms-a1-sjO"/>
+                        <outlet property="deleteButtton" destination="3BW-hD-Hn2" id="pkj-qy-4ab"/>
                         <outlet property="tableView" destination="72Y-NR-pYh" id="cFY-ZX-8DY"/>
+                        <outlet property="upDateButton" destination="NAp-Xp-hHk" id="pmA-PB-7I2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8py-96-rhb" userLabel="First Responder" sceneMemberID="firstResponder"/>

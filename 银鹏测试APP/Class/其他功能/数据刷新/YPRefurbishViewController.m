@@ -14,6 +14,9 @@
 /**酒数据*/
 @property (nonatomic,strong)   NSMutableArray *wineArray;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIButton *addButton;
+@property (weak, nonatomic) IBOutlet UIButton *upDateButton;
+@property (weak, nonatomic) IBOutlet UIButton *deleteButtton;
 @end
 
 @implementation YPRefurbishViewController
@@ -31,6 +34,10 @@
     [super viewDidLoad];
     // tableVIew在编辑模式下中的可以多选，
     self.tableView.allowsMultipleSelectionDuringEditing = YES;
+    // 没进入编辑界面之前隐藏删除按钮
+    self.deleteButtton.hidden = YES;
+    self.addButton.hidden = NO;
+    self.upDateButton.hidden = NO;
 }
 
 /**
@@ -73,8 +80,26 @@
     // 进入编辑模式
     //self.tableView.editing = !self.tableView.editing;   // 取反
     [self.tableView setEditing:!self.tableView.isEditing animated:YES];
-    // 不要一边遍历一边删除元素，因为元素的索引可能会发生变化
-    
+    // 进入编辑界面之后显示删除按钮，隐藏其他按钮
+    self.deleteButtton.hidden = !self.tableView.isEditing;
+    self.addButton.hidden   = self.tableView.isEditing;
+    self.upDateButton.hidden  =  self.tableView.isEditing;
+}
+- (IBAction)delete {
+    // 用一个可变数组存储被勾选的cell模型，不要一边遍历一边删除元素，因为元素的索引可能会发生变化
+    NSMutableArray *deleteWine = [NSMutableArray array];
+    for (NSIndexPath *indexPath in self.tableView.indexPathsForSelectedRows) {
+        [deleteWine addObject:self.wineArray[indexPath.row]];
+    }
+    // 删除要删除的酒模型
+    [self.wineArray removeObjectsInArray:deleteWine];
+    // 刷新表格
+    [self.tableView deleteRowsAtIndexPaths:self.tableView.indexPathsForSelectedRows withRowAnimation:UITableViewRowAnimationLeft];
+    // 删除完恢复普通模式
+    [self.tableView setEditing:NO animated:YES];
+    self.deleteButtton.hidden = YES;
+    self.addButton.hidden = NO;
+    self.upDateButton.hidden = NO;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -101,7 +126,7 @@
     [self.wineArray removeObjectAtIndex:indexPath.row];
     [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
 }
-
+ 
 /**
  设置右划删除按钮的标题
  */
@@ -117,7 +142,7 @@
         // 默认当右划时进入tableView的编辑模式,如果要使的tableView右划取消的平滑好看，就要取消退出编辑模式
         self.tableView.editing =NO;
     }];
-    UITableViewRowAction *action1 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+    UITableViewRowAction *action1 = [UITableViewRowAction  rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
         [self.wineArray removeObjectAtIndex:indexPath.row];
         [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
     }];

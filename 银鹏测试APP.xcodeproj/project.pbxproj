@@ -13,6 +13,10 @@
 		7109CC281F3859C500462EA8 /* MyMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7109CC261F3859C500462EA8 /* MyMusicViewController.m */; };
 		7109CC291F3859C500462EA8 /* MyMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7109CC271F3859C500462EA8 /* MyMusicViewController.xib */; };
 		7109CC2D1F385A2900462EA8 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7109CC2B1F385A2900462EA8 /* DiscoverViewController.m */; };
+		713B0E631FE10DF0005AF7DD /* YPShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713B0E621FE10DF0005AF7DD /* YPShoppingViewController.m */; };
+		713B0E651FE10E16005AF7DD /* YPShoppingView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713B0E641FE10E16005AF7DD /* YPShoppingView.storyboard */; };
+		713B0E661FE11997005AF7DD /* YPShoppingViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 713B0E611FE10DF0005AF7DD /* YPShoppingViewController.h */; };
+		713B0E691FE148D1005AF7DD /* YPShoppingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 713B0E681FE148D1005AF7DD /* YPShoppingCell.m */; };
 		713ECAAD1FD030B900BBA43D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713ECAAC1FD030B900BBA43D /* LaunchScreen.storyboard */; };
 		713ECE671FC6EADA0022CDFD /* statuses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 713ECE661FC6E8400022CDFD /* statuses.plist */; };
 		714B26B71FAF343100356E99 /* YPAccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 714B26B61FAF343100356E99 /* YPAccountController.m */; };
@@ -83,6 +87,7 @@
 		71CA5A131FD970B2004AF2F4 /* YPRefurbishView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71CA5A121FD97072004AF2F4 /* YPRefurbishView.storyboard */; };
 		71D68E761F90F49100932B83 /* YPPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71D68E751F90F49100932B83 /* YPPageView.xib */; };
 		71EA123C1F454178005B52FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71EA123B1F454178005B52FC /* Assets.xcassets */; };
+		71FDEFB71FE2637D0081B1D7 /* YPShoppingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FDEFB61FE2637D0081B1D7 /* YPShoppingButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +103,11 @@
 		7109CC271F3859C500462EA8 /* MyMusicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyMusicViewController.xib; sourceTree = "<group>"; };
 		7109CC2A1F385A2900462EA8 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
 		7109CC2B1F385A2900462EA8 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		713B0E611FE10DF0005AF7DD /* YPShoppingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPShoppingViewController.h; sourceTree = "<group>"; };
+		713B0E621FE10DF0005AF7DD /* YPShoppingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPShoppingViewController.m; sourceTree = "<group>"; };
+		713B0E641FE10E16005AF7DD /* YPShoppingView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPShoppingView.storyboard; sourceTree = "<group>"; };
+		713B0E671FE148D1005AF7DD /* YPShoppingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPShoppingCell.h; sourceTree = "<group>"; };
+		713B0E681FE148D1005AF7DD /* YPShoppingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPShoppingCell.m; sourceTree = "<group>"; };
 		713ECAAC1FD030B900BBA43D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		713ECE661FC6E8400022CDFD /* statuses.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = statuses.plist; sourceTree = "<group>"; };
 		714B26981FAC4A8B00356E99 /* MJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
@@ -183,6 +193,8 @@
 		71CA5A121FD97072004AF2F4 /* YPRefurbishView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPRefurbishView.storyboard; sourceTree = "<group>"; };
 		71D68E751F90F49100932B83 /* YPPageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YPPageView.xib; sourceTree = "<group>"; };
 		71EA123B1F454178005B52FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71FDEFB51FE2637D0081B1D7 /* YPShoppingButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPShoppingButton.h; sourceTree = "<group>"; };
+		71FDEFB61FE2637D0081B1D7 /* YPShoppingButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPShoppingButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +242,20 @@
 			children = (
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		713B0E601FE10D83005AF7DD /* Shopping(购物车) */ = {
+			isa = PBXGroup;
+			children = (
+				713B0E611FE10DF0005AF7DD /* YPShoppingViewController.h */,
+				713B0E621FE10DF0005AF7DD /* YPShoppingViewController.m */,
+				713B0E641FE10E16005AF7DD /* YPShoppingView.storyboard */,
+				71FDEFB51FE2637D0081B1D7 /* YPShoppingButton.h */,
+				71FDEFB61FE2637D0081B1D7 /* YPShoppingButton.m */,
+				713B0E671FE148D1005AF7DD /* YPShoppingCell.h */,
+				713B0E681FE148D1005AF7DD /* YPShoppingCell.m */,
+			);
+			path = "Shopping(购物车)";
 			sourceTree = "<group>";
 		};
 		714B26961FAC4A8B00356E99 /* MJExtension */ = {
@@ -559,6 +585,7 @@
 		71BC1F431FD80A010026117D /* 其他功能 */ = {
 			isa = PBXGroup;
 			children = (
+				713B0E601FE10D83005AF7DD /* Shopping(购物车) */,
 				71BC1F441FD80A1A0026117D /* 数据刷新 */,
 			);
 			path = "其他功能";
@@ -640,6 +667,7 @@
 			files = (
 				71CA5A131FD970B2004AF2F4 /* YPRefurbishView.storyboard in Resources */,
 				71BC1F571FD83C400026117D /* wine.plist in Resources */,
+				713B0E651FE10E16005AF7DD /* YPShoppingView.storyboard in Resources */,
 				713ECE671FC6EADA0022CDFD /* statuses.plist in Resources */,
 				7153CDC31FAB5CE6003A3375 /* tgs.plist in Resources */,
 				7153CDAE1FA488D0003A3375 /* list.plist in Resources */,
@@ -658,6 +686,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				713B0E661FE11997005AF7DD /* YPShoppingViewController.h in Sources */,
 				71BC1F231FD7E4EA0026117D /* MASCompositeConstraint.h in Sources */,
 				71BC1F241FD7E4EA0026117D /* MASCompositeConstraint.m in Sources */,
 				71BC1F251FD7E4EA0026117D /* MASConstraint+Private.h in Sources */,
@@ -672,6 +701,7 @@
 				71BC1F2C1FD7E4EA0026117D /* Masonry.h in Sources */,
 				71BC1F2D1FD7E4EA0026117D /* MASUtilities.h in Sources */,
 				71BC1F2E1FD7E4EA0026117D /* MASViewAttribute.h in Sources */,
+				713B0E691FE148D1005AF7DD /* YPShoppingCell.m in Sources */,
 				71BC1F2F1FD7E4EA0026117D /* MASViewAttribute.m in Sources */,
 				71BC1F301FD7E4EA0026117D /* MASViewConstraint.h in Sources */,
 				71BC1F311FD7E4EA0026117D /* MASViewConstraint.m in Sources */,
@@ -688,6 +718,7 @@
 				71BC1F3B1FD7E4EA0026117D /* ViewController+MASAdditions.m in Sources */,
 				71644F7F1FC55D6F00A1E9C1 /* MJExtension.h in Sources */,
 				71644F801FC55D6F00A1E9C1 /* MJExtensionConst.h in Sources */,
+				713B0E631FE10DF0005AF7DD /* YPShoppingViewController.m in Sources */,
 				71644F811FC55D6F00A1E9C1 /* MJExtensionConst.m in Sources */,
 				71644F821FC55D6F00A1E9C1 /* MJFoundation.h in Sources */,
 				71644F831FC55D6F00A1E9C1 /* MJFoundation.m in Sources */,
@@ -707,6 +738,7 @@
 				71644F901FC55D6F00A1E9C1 /* NSObject+MJProperty.h in Sources */,
 				71644F911FC55D6F00A1E9C1 /* NSObject+MJProperty.m in Sources */,
 				71644F921FC55D6F00A1E9C1 /* NSString+MJExtension.h in Sources */,
+				71FDEFB71FE2637D0081B1D7 /* YPShoppingButton.m in Sources */,
 				71644F931FC55D6F00A1E9C1 /* NSString+MJExtension.m in Sources */,
 				71BC1EA01FD6E2760026117D /* YPTableBarViewController.m in Sources */,
 				714B26BC1FAF3B9700356E99 /* YPSetting.m in Sources */,
