@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class YPWine;
 @interface YPShoppingCell : UITableViewCell
-
+/**酒的模型*/
+@property (nonatomic,strong)   YPWine *wines;
 @end

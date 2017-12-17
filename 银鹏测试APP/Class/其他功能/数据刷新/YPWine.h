@@ -15,4 +15,6 @@
 @property (nonatomic,copy)   NSString *money;
 /**名字*/
 @property (nonatomic,copy)   NSString *name;
+/**购买的酒数量*/
+@property (nonatomic,assign)   int count;
 @end
