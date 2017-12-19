@@ -88,6 +88,7 @@
 		71D68E761F90F49100932B83 /* YPPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71D68E751F90F49100932B83 /* YPPageView.xib */; };
 		71EA123C1F454178005B52FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71EA123B1F454178005B52FC /* Assets.xcassets */; };
 		71FDEFB71FE2637D0081B1D7 /* YPShoppingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FDEFB61FE2637D0081B1D7 /* YPShoppingButton.m */; };
+		71FDEFBE1FE931A20081B1D7 /* YPSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FDEFBD1FE931A20081B1D7 /* YPSettingTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -195,6 +196,8 @@
 		71EA123B1F454178005B52FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71FDEFB51FE2637D0081B1D7 /* YPShoppingButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPShoppingButton.h; sourceTree = "<group>"; };
 		71FDEFB61FE2637D0081B1D7 /* YPShoppingButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPShoppingButton.m; sourceTree = "<group>"; };
+		71FDEFBC1FE931A20081B1D7 /* YPSettingTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPSettingTableViewController.h; sourceTree = "<group>"; };
+		71FDEFBD1FE931A20081B1D7 /* YPSettingTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPSettingTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -585,6 +588,7 @@
 		71BC1F431FD80A010026117D /* 其他功能 */ = {
 			isa = PBXGroup;
 			children = (
+				71FDEFB81FE9307C0081B1D7 /* 设置 */,
 				713B0E601FE10D83005AF7DD /* Shopping(购物车) */,
 				71BC1F441FD80A1A0026117D /* 数据刷新 */,
 			);
@@ -604,6 +608,15 @@
 				71BC1F501FD813130026117D /* YPWine.m */,
 			);
 			path = "数据刷新";
+			sourceTree = "<group>";
+		};
+		71FDEFB81FE9307C0081B1D7 /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+				71FDEFBC1FE931A20081B1D7 /* YPSettingTableViewController.h */,
+				71FDEFBD1FE931A20081B1D7 /* YPSettingTableViewController.m */,
+			);
+			path = "设置";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -696,6 +709,7 @@
 				71BC1F291FD7E4EA0026117D /* MASConstraintMaker.m in Sources */,
 				71BC1F4D1FD8129A0026117D /* YPRefurbishTableViewCell.m in Sources */,
 				71BC1F2A1FD7E4EA0026117D /* MASLayoutConstraint.h in Sources */,
+				71FDEFBE1FE931A20081B1D7 /* YPSettingTableViewController.m in Sources */,
 				71BC1F471FD80AA70026117D /* YPRefurbishViewController.m in Sources */,
 				71BC1F2B1FD7E4EA0026117D /* MASLayoutConstraint.m in Sources */,
 				71BC1F2C1FD7E4EA0026117D /* Masonry.h in Sources */,

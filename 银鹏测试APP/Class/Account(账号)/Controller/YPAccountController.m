@@ -10,6 +10,7 @@
 #import "MyMusicViewController.h"
 #import "YPRefurbishViewController.h"
 #import "YPShoppingViewController.h"
+#import "YPSettingTableViewController.h"
 #import "YPSetting.h"
 @interface YPAccountController ()
 
@@ -21,7 +22,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 4;
+    return 5;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -39,6 +40,9 @@
         }else if (indexPath.row == 3){
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell.textLabel.text = @"购物车";
+        }else if(indexPath.row == 4){
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            cell.textLabel.text =  @"设置";
         }
     }
     return cell;
@@ -62,8 +66,10 @@
             UIStoryboard *four = [UIStoryboard storyboardWithName:@"YPShoppingView" bundle:nil];
             YPShoppingViewController *Shopping = [four instantiateViewControllerWithIdentifier:@"03"];
             [self.navigationController pushViewController:Shopping animated:YES];
-        }
+        }else if (indexPath.row == 4){
+        YPSettingTableViewController *five = [[YPSettingTableViewController alloc]init];
+        [self.navigationController pushViewController:five animated:YES];
     }
 }
-
+}
 @end
