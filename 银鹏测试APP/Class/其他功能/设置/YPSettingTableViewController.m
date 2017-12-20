@@ -36,7 +36,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return 2;
 }
 
 
@@ -48,6 +48,12 @@
         [cell setAccessoryView:YPSwitch];
         [YPSwitch addTarget:self action:@selector(YPSwitchAction:) forControlEvents:UIControlEventAllEvents];
         cell.textLabel.text = @"是否允许新消息提醒？";
+    }else if (indexPath.row == 1){
+        cell.accessoryType = UITableViewCellAccessoryNone;
+        UISwitch *YPSwitch1 = [[UISwitch alloc]init];
+        [cell setAccessoryView:YPSwitch1];
+        [YPSwitch1 addTarget:self action:@selector(YPSwitchAction1:) forControlEvents:UIControlEventAllEvents];
+        cell.textLabel.text = @"是否隐藏状态栏";
     }
     return cell;
 }
@@ -56,6 +62,7 @@
     BOOL isSwitchOn = [YPSwitch isOn];
     if (isSwitchOn) {
         UIApplication *app = [UIApplication sharedApplication];
+        //[UNUserNotificationCenter currentNotificationCenter].delegate = app;
         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
         [center requestAuthorizationWithOptions:UNAuthorizationOptionBadge completionHandler:^(BOOL granted, NSError * _Nullable error) {
             if (granted) {
@@ -64,6 +71,7 @@
                 [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
                     NSLog(@"%@", settings);
                 }];
+                //[[UIApplication sharedApplication]registerForRemoteNotifications];
             } else {
                 // 点击不允许
                 NSLog(@"注册失败");
@@ -72,9 +80,20 @@
         app.applicationIconBadgeNumber = 10;
     }
 }
+-(void)YPSwitchAction1:(id)sender{
+    UISwitch *YPSwitch1 = (UISwitch *)sender;
+    BOOL isSwitchOn = [YPSwitch1 isOn];
+    if (isSwitchOn) {
+        UIApplication *app = [UIApplication sharedApplication];
+        app.statusBarHidden = YES;
+    }else{
+        UIApplication *app = [UIApplication sharedApplication];
+        app.statusBarHidden = NO;
+    }
+}
 /*
 // Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {View controller-based status bar appearance
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }

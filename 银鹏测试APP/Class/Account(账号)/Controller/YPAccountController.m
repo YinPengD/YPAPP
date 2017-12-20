@@ -69,7 +69,7 @@
         }else if (indexPath.row == 4){
         YPSettingTableViewController *five = [[YPSettingTableViewController alloc]init];
         [self.navigationController pushViewController:five animated:YES];
-    }
+        }
 }
 }
 @end
