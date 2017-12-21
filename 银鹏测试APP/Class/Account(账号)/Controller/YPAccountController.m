@@ -11,6 +11,7 @@
 #import "YPRefurbishViewController.h"
 #import "YPShoppingViewController.h"
 #import "YPSettingTableViewController.h"
+#import "YPMySelfTableViewController.h"
 #import "YPSetting.h"
 @interface YPAccountController ()
 
@@ -22,7 +23,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return 6;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -43,6 +44,9 @@
         }else if(indexPath.row == 4){
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell.textLabel.text =  @"设置";
+        }else if(indexPath.row == 5){
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            cell.textLabel.text = @"我的资料";
         }
     }
     return cell;
@@ -69,7 +73,10 @@
         }else if (indexPath.row == 4){
         YPSettingTableViewController *five = [[YPSettingTableViewController alloc]init];
         [self.navigationController pushViewController:five animated:YES];
-        }
+        }else if (indexPath.row == 5){
+            YPMySelfTableViewController *six =[[YPMySelfTableViewController alloc]init];
+            [self.navigationController pushViewController:six animated:YES];
+        };
 }
 }
 @end

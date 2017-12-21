@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="H8r-qR-IaA" customClass="YPMyselfCountryView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7E-0Z-kPT">
+                    <rect key="frame" x="0.0" y="0.0" width="175" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="175" id="tWn-96-a0M"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ybh-aD-qUy">
+                    <rect key="frame" x="175" y="0.0" width="200" height="90"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zOl-CK-0DZ" firstAttribute="bottom" secondItem="I7E-0Z-kPT" secondAttribute="bottom" id="BhP-s9-6iN"/>
+                <constraint firstItem="Ybh-aD-qUy" firstAttribute="top" secondItem="H8r-qR-IaA" secondAttribute="top" id="Mot-4j-wxO"/>
+                <constraint firstItem="I7E-0Z-kPT" firstAttribute="leading" secondItem="zOl-CK-0DZ" secondAttribute="leading" id="QBK-ci-HTq"/>
+                <constraint firstAttribute="trailing" secondItem="Ybh-aD-qUy" secondAttribute="trailing" id="b0Y-sB-QVT"/>
+                <constraint firstAttribute="bottom" secondItem="Ybh-aD-qUy" secondAttribute="bottom" id="bXH-zK-rnn"/>
+                <constraint firstItem="I7E-0Z-kPT" firstAttribute="top" secondItem="zOl-CK-0DZ" secondAttribute="top" id="ked-Al-BvY"/>
+                <constraint firstItem="Ybh-aD-qUy" firstAttribute="leading" secondItem="I7E-0Z-kPT" secondAttribute="trailing" id="v6i-4E-hDh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="zOl-CK-0DZ"/>
+            <connections>
+                <outlet property="iconImageView" destination="Ybh-aD-qUy" id="tkg-wn-0Mf"/>
+                <outlet property="nameLabel" destination="I7E-0Z-kPT" id="Udb-Ae-J3Z"/>
+            </connections>
+            <point key="canvasLocation" x="-4" y="-64"/>
+        </view>
+    </objects>
+</document>

@@ -89,6 +89,11 @@
 		71EA123C1F454178005B52FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71EA123B1F454178005B52FC /* Assets.xcassets */; };
 		71FDEFB71FE2637D0081B1D7 /* YPShoppingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FDEFB61FE2637D0081B1D7 /* YPShoppingButton.m */; };
 		71FDEFBE1FE931A20081B1D7 /* YPSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FDEFBD1FE931A20081B1D7 /* YPSettingTableViewController.m */; };
+		71FDEFC21FEBD5060081B1D7 /* YPMySelfTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FDEFC11FEBD5060081B1D7 /* YPMySelfTableViewController.m */; };
+		71FDEFC81FEBDDF90081B1D7 /* YPMySelfTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FDEFC71FEBDDF90081B1D7 /* YPMySelfTextField.m */; };
+		71FDEFCC1FEBE95C0081B1D7 /* Countryitem.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FDEFCB1FEBE95C0081B1D7 /* Countryitem.m */; };
+		71FDEFCF1FEBED1F0081B1D7 /* YPMyselfCountryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FDEFCE1FEBED1F0081B1D7 /* YPMyselfCountryView.m */; };
+		71FDEFD31FEBEE450081B1D7 /* CountryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71FDEFD21FEBEE450081B1D7 /* CountryView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -198,6 +203,16 @@
 		71FDEFB61FE2637D0081B1D7 /* YPShoppingButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPShoppingButton.m; sourceTree = "<group>"; };
 		71FDEFBC1FE931A20081B1D7 /* YPSettingTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPSettingTableViewController.h; sourceTree = "<group>"; };
 		71FDEFBD1FE931A20081B1D7 /* YPSettingTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPSettingTableViewController.m; sourceTree = "<group>"; };
+		71FDEFC01FEBD5060081B1D7 /* YPMySelfTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPMySelfTableViewController.h; sourceTree = "<group>"; };
+		71FDEFC11FEBD5060081B1D7 /* YPMySelfTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPMySelfTableViewController.m; sourceTree = "<group>"; };
+		71FDEFC61FEBDDF90081B1D7 /* YPMySelfTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPMySelfTextField.h; sourceTree = "<group>"; };
+		71FDEFC71FEBDDF90081B1D7 /* YPMySelfTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPMySelfTextField.m; sourceTree = "<group>"; };
+		71FDEFC91FEBE7EA0081B1D7 /* flags.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = flags.plist; sourceTree = "<group>"; };
+		71FDEFCA1FEBE95C0081B1D7 /* Countryitem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Countryitem.h; sourceTree = "<group>"; };
+		71FDEFCB1FEBE95C0081B1D7 /* Countryitem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Countryitem.m; sourceTree = "<group>"; };
+		71FDEFCD1FEBED1F0081B1D7 /* YPMyselfCountryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPMyselfCountryView.h; sourceTree = "<group>"; };
+		71FDEFCE1FEBED1F0081B1D7 /* YPMyselfCountryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPMyselfCountryView.m; sourceTree = "<group>"; };
+		71FDEFD21FEBEE450081B1D7 /* CountryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -588,6 +603,7 @@
 		71BC1F431FD80A010026117D /* 其他功能 */ = {
 			isa = PBXGroup;
 			children = (
+				71FDEFBF1FEBD49F0081B1D7 /* MySelf(我的资料) */,
 				71FDEFB81FE9307C0081B1D7 /* 设置 */,
 				713B0E601FE10D83005AF7DD /* Shopping(购物车) */,
 				71BC1F441FD80A1A0026117D /* 数据刷新 */,
@@ -617,6 +633,47 @@
 				71FDEFBD1FE931A20081B1D7 /* YPSettingTableViewController.m */,
 			);
 			path = "设置";
+			sourceTree = "<group>";
+		};
+		71FDEFBF1FEBD49F0081B1D7 /* MySelf(我的资料) */ = {
+			isa = PBXGroup;
+			children = (
+				71FDEFC91FEBE7EA0081B1D7 /* flags.plist */,
+				71FDEFC31FEBDD670081B1D7 /* Controller */,
+				71FDEFC41FEBDD7B0081B1D7 /* Mode */,
+				71FDEFC51FEBDD830081B1D7 /* View */,
+			);
+			path = "MySelf(我的资料)";
+			sourceTree = "<group>";
+		};
+		71FDEFC31FEBDD670081B1D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				71FDEFC01FEBD5060081B1D7 /* YPMySelfTableViewController.h */,
+				71FDEFC11FEBD5060081B1D7 /* YPMySelfTableViewController.m */,
+				71FDEFC61FEBDDF90081B1D7 /* YPMySelfTextField.h */,
+				71FDEFC71FEBDDF90081B1D7 /* YPMySelfTextField.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		71FDEFC41FEBDD7B0081B1D7 /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+				71FDEFCA1FEBE95C0081B1D7 /* Countryitem.h */,
+				71FDEFCB1FEBE95C0081B1D7 /* Countryitem.m */,
+			);
+			path = Mode;
+			sourceTree = "<group>";
+		};
+		71FDEFC51FEBDD830081B1D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71FDEFCD1FEBED1F0081B1D7 /* YPMyselfCountryView.h */,
+				71FDEFCE1FEBED1F0081B1D7 /* YPMyselfCountryView.m */,
+				71FDEFD21FEBEE450081B1D7 /* CountryView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -685,6 +742,7 @@
 				7153CDC31FAB5CE6003A3375 /* tgs.plist in Resources */,
 				7153CDAE1FA488D0003A3375 /* list.plist in Resources */,
 				71D68E761F90F49100932B83 /* YPPageView.xib in Resources */,
+				71FDEFD31FEBEE450081B1D7 /* CountryView.xib in Resources */,
 				713ECAAD1FD030B900BBA43D /* LaunchScreen.storyboard in Resources */,
 				714B26BE1FAF3BB600356E99 /* YPSetting.storyboard in Resources */,
 				7109CC291F3859C500462EA8 /* MyMusicViewController.xib in Resources */,
@@ -710,6 +768,7 @@
 				71BC1F4D1FD8129A0026117D /* YPRefurbishTableViewCell.m in Sources */,
 				71BC1F2A1FD7E4EA0026117D /* MASLayoutConstraint.h in Sources */,
 				71FDEFBE1FE931A20081B1D7 /* YPSettingTableViewController.m in Sources */,
+				71FDEFCC1FEBE95C0081B1D7 /* Countryitem.m in Sources */,
 				71BC1F471FD80AA70026117D /* YPRefurbishViewController.m in Sources */,
 				71BC1F2B1FD7E4EA0026117D /* MASLayoutConstraint.m in Sources */,
 				71BC1F2C1FD7E4EA0026117D /* Masonry.h in Sources */,
@@ -739,6 +798,7 @@
 				71644F841FC55D6F00A1E9C1 /* MJProperty.h in Sources */,
 				71644F851FC55D6F00A1E9C1 /* MJProperty.m in Sources */,
 				71BC1F511FD813130026117D /* YPWine.m in Sources */,
+				71FDEFC21FEBD5060081B1D7 /* YPMySelfTableViewController.m in Sources */,
 				71644F861FC55D6F00A1E9C1 /* MJPropertyKey.h in Sources */,
 				71644F871FC55D6F00A1E9C1 /* MJPropertyKey.m in Sources */,
 				71644F881FC55D6F00A1E9C1 /* MJPropertyType.h in Sources */,
@@ -755,10 +815,12 @@
 				71FDEFB71FE2637D0081B1D7 /* YPShoppingButton.m in Sources */,
 				71644F931FC55D6F00A1E9C1 /* NSString+MJExtension.m in Sources */,
 				71BC1EA01FD6E2760026117D /* YPTableBarViewController.m in Sources */,
+				71FDEFCF1FEBED1F0081B1D7 /* YPMyselfCountryView.m in Sources */,
 				714B26BC1FAF3B9700356E99 /* YPSetting.m in Sources */,
 				7153CDB81FAA0E03003A3375 /* YPtgMode.m in Sources */,
 				7153CDA91FA34F17003A3375 /* dict_mode.m in Sources */,
 				719916411FB1C99F005056F7 /* YPStatusCell.m in Sources */,
+				71FDEFC81FEBDDF90081B1D7 /* YPMySelfTextField.m in Sources */,
 				7153CDBC1FAAB3B0003A3375 /* YPTGViewController.m in Sources */,
 				7199163D1FB1C7A1005056F7 /* YPStatus.m in Sources */,
 				714B26B71FAF343100356E99 /* YPAccountController.m in Sources */,
