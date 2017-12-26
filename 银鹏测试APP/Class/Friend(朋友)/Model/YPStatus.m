@@ -18,6 +18,7 @@
         CGFloat iconw = 30;
         CGFloat iconh = 30;
         self.iconframe = CGRectMake(iconx, icony, iconw, iconh);
+        
         //昵称
         CGFloat namex = CGRectGetMaxX(self.iconframe) + Space;
         CGFloat namey = Space;
@@ -27,6 +28,7 @@
         CGFloat namew =nameSize.width;
         CGFloat nameh = nameSize.height;
         self.nameframe = CGRectMake(namex, namey, namew, nameh);
+        
         //vip
         if(self.vip){
             CGFloat vipx = CGRectGetMaxX(self.nameframe) + Space;
@@ -35,6 +37,7 @@
             CGFloat vipy = namey + (nameh - viph)*0.5;
             self.vipframe = CGRectMake(vipx, vipy, vipw, viph);
         }
+        
         //正文
         CGFloat textx = Space;
         CGFloat texty = CGRectGetMaxX(self.iconframe) + Space;
@@ -43,6 +46,7 @@
         NSDictionary *textAtt = @{NSFontAttributeName:[UIFont systemFontOfSize:17]};
         CGFloat texth   = [self.text boundingRectWithSize:textSize options:NSStringDrawingUsesLineFragmentOrigin attributes: textAtt context:nil].size.height;
         self.textframe = CGRectMake(textx, texty,textw, texth);
+        
         //配图
         if(self.picture){
             CGFloat picturex  = Space;

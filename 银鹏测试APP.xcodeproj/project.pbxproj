@@ -13,6 +13,7 @@
 		7109CC281F3859C500462EA8 /* MyMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7109CC261F3859C500462EA8 /* MyMusicViewController.m */; };
 		7109CC291F3859C500462EA8 /* MyMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7109CC271F3859C500462EA8 /* MyMusicViewController.xib */; };
 		7109CC2D1F385A2900462EA8 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7109CC2B1F385A2900462EA8 /* DiscoverViewController.m */; };
+		7113BAB21FF10BB000806430 /* YPMySelfTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7113BAB11FF10BB000806430 /* YPMySelfTableViewCell.m */; };
 		713B0E631FE10DF0005AF7DD /* YPShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713B0E621FE10DF0005AF7DD /* YPShoppingViewController.m */; };
 		713B0E651FE10E16005AF7DD /* YPShoppingView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713B0E641FE10E16005AF7DD /* YPShoppingView.storyboard */; };
 		713B0E661FE11997005AF7DD /* YPShoppingViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 713B0E611FE10DF0005AF7DD /* YPShoppingViewController.h */; };
@@ -109,6 +110,8 @@
 		7109CC271F3859C500462EA8 /* MyMusicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyMusicViewController.xib; sourceTree = "<group>"; };
 		7109CC2A1F385A2900462EA8 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
 		7109CC2B1F385A2900462EA8 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		7113BAB01FF10BB000806430 /* YPMySelfTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPMySelfTableViewCell.h; sourceTree = "<group>"; };
+		7113BAB11FF10BB000806430 /* YPMySelfTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPMySelfTableViewCell.m; sourceTree = "<group>"; };
 		713B0E611FE10DF0005AF7DD /* YPShoppingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPShoppingViewController.h; sourceTree = "<group>"; };
 		713B0E621FE10DF0005AF7DD /* YPShoppingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPShoppingViewController.m; sourceTree = "<group>"; };
 		713B0E641FE10E16005AF7DD /* YPShoppingView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPShoppingView.storyboard; sourceTree = "<group>"; };
@@ -617,8 +620,8 @@
 				71BC1F521FD81CE90026117D /* wine.plist */,
 				71BC1F451FD80AA70026117D /* YPRefurbishViewController.h */,
 				71BC1F461FD80AA70026117D /* YPRefurbishViewController.m */,
-				71BC1F4B1FD8129A0026117D /* YPRefurbishTableViewCell.h */,
 				71CA5A121FD97072004AF2F4 /* YPRefurbishView.storyboard */,
+				71BC1F4B1FD8129A0026117D /* YPRefurbishTableViewCell.h */,
 				71BC1F4C1FD8129A0026117D /* YPRefurbishTableViewCell.m */,
 				71BC1F4F1FD813130026117D /* YPWine.h */,
 				71BC1F501FD813130026117D /* YPWine.m */,
@@ -651,6 +654,8 @@
 			children = (
 				71FDEFC01FEBD5060081B1D7 /* YPMySelfTableViewController.h */,
 				71FDEFC11FEBD5060081B1D7 /* YPMySelfTableViewController.m */,
+				7113BAB01FF10BB000806430 /* YPMySelfTableViewCell.h */,
+				7113BAB11FF10BB000806430 /* YPMySelfTableViewCell.m */,
 				71FDEFC61FEBDDF90081B1D7 /* YPMySelfTextField.h */,
 				71FDEFC71FEBDDF90081B1D7 /* YPMySelfTextField.m */,
 			);
@@ -803,6 +808,7 @@
 				71644F871FC55D6F00A1E9C1 /* MJPropertyKey.m in Sources */,
 				71644F881FC55D6F00A1E9C1 /* MJPropertyType.h in Sources */,
 				71644F891FC55D6F00A1E9C1 /* MJPropertyType.m in Sources */,
+				7113BAB21FF10BB000806430 /* YPMySelfTableViewCell.m in Sources */,
 				71644F8A1FC55D6F00A1E9C1 /* NSObject+MJClass.h in Sources */,
 				71644F8B1FC55D6F00A1E9C1 /* NSObject+MJClass.m in Sources */,
 				71644F8C1FC55D6F00A1E9C1 /* NSObject+MJCoding.h in Sources */,

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 @interface Countryitem : NSObject
 /*城市名字*/
 @property (nonatomic,strong)   NSString *name;

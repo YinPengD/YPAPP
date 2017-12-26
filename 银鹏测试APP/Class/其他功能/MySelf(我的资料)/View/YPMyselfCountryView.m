@@ -21,6 +21,6 @@
 -(void)setItem:(Countryitem *)item{
     _item = item;
     self.nameLabel.text = item.name;
-    self.iconImageView.image = [UIImage imageNamed:item.icon];
+    self.iconImageView.image = item.icon;
 }
 @end
