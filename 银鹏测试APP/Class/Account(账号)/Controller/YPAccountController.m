@@ -12,6 +12,7 @@
 #import "YPShoppingViewController.h"
 #import "YPSettingTableViewController.h"
 #import "YPMySelfTableViewController.h"
+#import "YPTransformView.h"
 #import "YPSetting.h"
 @interface YPAccountController ()
 
@@ -23,7 +24,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 6;
+    return 7;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -47,6 +48,9 @@
         }else if(indexPath.row == 5){
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell.textLabel.text = @"我的资料";
+        }else if (indexPath.row == 6){
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            cell.textLabel.text = @"视图移动动画";
         }
     }
     return cell;
@@ -76,6 +80,10 @@
         }else if (indexPath.row == 5){
             YPMySelfTableViewController *six =[[YPMySelfTableViewController alloc]init];
             [self.navigationController pushViewController:six animated:YES];
+        }else if (indexPath.row == 6){
+            UIStoryboard *seven = [UIStoryboard storyboardWithName:@"YPTransformView" bundle:nil];
+            YPTransformView *trans = [seven instantiateViewControllerWithIdentifier:@"04"];
+            [self.navigationController pushViewController:trans animated:YES];
         };
 }
 }
