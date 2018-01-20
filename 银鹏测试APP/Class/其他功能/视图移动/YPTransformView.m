@@ -43,12 +43,17 @@
     }];
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+/**
+View跟随手指移动
+NSSet: 是无序的对象数组
+ */
+-(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    UITouch *touch  = [touches anyObject];
+    CGPoint curP = [touch locationInView:self.view];
+    CGPoint preP = [touch previousLocationInView:self.view];
+    CGFloat offestX = curP.x - preP.x;
+    CGFloat offestY = curP.y - preP.y;
+    self.imageV.transform = CGAffineTransformTranslate(self.imageV.transform, offestX, offestY);
 }
-*/
 
 @end

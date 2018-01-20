@@ -20,7 +20,9 @@
     // ------1.创建窗口（强引用窗口，不让窗口消失），然后设置尺寸
     self.window  = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     UITabBarController *tabBarVc = [[YPTableBarViewController alloc]init];
-    // ------2.设置窗口的根控制器
+    // ------2.设置窗口的根控制器(从StoryBoard)中加载
+    // UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    // UIViewController *vc = [story instantiateInitialViewController];
     // ------3.创建导航控制器
     self.window.rootViewController = tabBarVc;
     //------4.显示窗口

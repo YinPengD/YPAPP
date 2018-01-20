@@ -16,6 +16,8 @@
 		7113BAB21FF10BB000806430 /* YPMySelfTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7113BAB11FF10BB000806430 /* YPMySelfTableViewCell.m */; };
 		7113BAB61FF3CDCC00806430 /* YPTransformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7113BAB51FF3CDCC00806430 /* YPTransformView.m */; };
 		7113BABC1FF3D5AB00806430 /* YPTransformView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7113BABB1FF3D5AB00806430 /* YPTransformView.storyboard */; };
+		7113BAC01FF4E52000806430 /* YPhitTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7113BABF1FF4E52000806430 /* YPhitTestViewController.m */; };
+		7113BAC81FF4E6B100806430 /* YPhitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7113BAC71FF4E6B100806430 /* YPhitTestView.m */; };
 		713B0E631FE10DF0005AF7DD /* YPShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713B0E621FE10DF0005AF7DD /* YPShoppingViewController.m */; };
 		713B0E651FE10E16005AF7DD /* YPShoppingView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713B0E641FE10E16005AF7DD /* YPShoppingView.storyboard */; };
 		713B0E661FE11997005AF7DD /* YPShoppingViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 713B0E611FE10DF0005AF7DD /* YPShoppingViewController.h */; };
@@ -89,6 +91,8 @@
 		71BC1F571FD83C400026117D /* wine.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71BC1F521FD81CE90026117D /* wine.plist */; };
 		71CA5A131FD970B2004AF2F4 /* YPRefurbishView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71CA5A121FD97072004AF2F4 /* YPRefurbishView.storyboard */; };
 		71D68E761F90F49100932B83 /* YPPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71D68E751F90F49100932B83 /* YPPageView.xib */; };
+		71DD987B1FF4ED25000EFEBB /* YPhitTestViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71DD987A1FF4ED25000EFEBB /* YPhitTestViewController.storyboard */; };
+		71E12B722011A07100170236 /* YPhitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E12B712011A07100170236 /* YPhitButton.m */; };
 		71EA123C1F454178005B52FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71EA123B1F454178005B52FC /* Assets.xcassets */; };
 		71FDEFB71FE2637D0081B1D7 /* YPShoppingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FDEFB61FE2637D0081B1D7 /* YPShoppingButton.m */; };
 		71FDEFBE1FE931A20081B1D7 /* YPSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FDEFBD1FE931A20081B1D7 /* YPSettingTableViewController.m */; };
@@ -117,6 +121,10 @@
 		7113BAB41FF3CDCC00806430 /* YPTransformView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPTransformView.h; sourceTree = "<group>"; };
 		7113BAB51FF3CDCC00806430 /* YPTransformView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPTransformView.m; sourceTree = "<group>"; };
 		7113BABB1FF3D5AB00806430 /* YPTransformView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPTransformView.storyboard; sourceTree = "<group>"; };
+		7113BABE1FF4E52000806430 /* YPhitTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPhitTestViewController.h; sourceTree = "<group>"; };
+		7113BABF1FF4E52000806430 /* YPhitTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPhitTestViewController.m; sourceTree = "<group>"; };
+		7113BAC61FF4E6B100806430 /* YPhitTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPhitTestView.h; sourceTree = "<group>"; };
+		7113BAC71FF4E6B100806430 /* YPhitTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPhitTestView.m; sourceTree = "<group>"; };
 		713B0E611FE10DF0005AF7DD /* YPShoppingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPShoppingViewController.h; sourceTree = "<group>"; };
 		713B0E621FE10DF0005AF7DD /* YPShoppingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPShoppingViewController.m; sourceTree = "<group>"; };
 		713B0E641FE10E16005AF7DD /* YPShoppingView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPShoppingView.storyboard; sourceTree = "<group>"; };
@@ -206,6 +214,9 @@
 		71BC1F521FD81CE90026117D /* wine.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = wine.plist; sourceTree = "<group>"; };
 		71CA5A121FD97072004AF2F4 /* YPRefurbishView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPRefurbishView.storyboard; sourceTree = "<group>"; };
 		71D68E751F90F49100932B83 /* YPPageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YPPageView.xib; sourceTree = "<group>"; };
+		71DD987A1FF4ED25000EFEBB /* YPhitTestViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPhitTestViewController.storyboard; sourceTree = "<group>"; };
+		71E12B702011A07100170236 /* YPhitButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YPhitButton.h; path = "银鹏测试APP/Class/其他功能/YPhitButton.h"; sourceTree = SOURCE_ROOT; };
+		71E12B712011A07100170236 /* YPhitButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YPhitButton.m; path = "银鹏测试APP/Class/其他功能/YPhitButton.m"; sourceTree = SOURCE_ROOT; };
 		71EA123B1F454178005B52FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71FDEFB51FE2637D0081B1D7 /* YPShoppingButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPShoppingButton.h; sourceTree = "<group>"; };
 		71FDEFB61FE2637D0081B1D7 /* YPShoppingButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPShoppingButton.m; sourceTree = "<group>"; };
@@ -278,6 +289,20 @@
 				7113BABB1FF3D5AB00806430 /* YPTransformView.storyboard */,
 			);
 			path = "视图移动";
+			sourceTree = "<group>";
+		};
+		7113BABD1FF4E3C400806430 /* hitTest(事件响应Demo) */ = {
+			isa = PBXGroup;
+			children = (
+				7113BABE1FF4E52000806430 /* YPhitTestViewController.h */,
+				7113BABF1FF4E52000806430 /* YPhitTestViewController.m */,
+				71E12B702011A07100170236 /* YPhitButton.h */,
+				71E12B712011A07100170236 /* YPhitButton.m */,
+				71DD987A1FF4ED25000EFEBB /* YPhitTestViewController.storyboard */,
+				7113BAC61FF4E6B100806430 /* YPhitTestView.h */,
+				7113BAC71FF4E6B100806430 /* YPhitTestView.m */,
+			);
+			path = "hitTest(事件响应Demo)";
 			sourceTree = "<group>";
 		};
 		713B0E601FE10D83005AF7DD /* Shopping(购物车) */ = {
@@ -621,6 +646,7 @@
 		71BC1F431FD80A010026117D /* 其他功能 */ = {
 			isa = PBXGroup;
 			children = (
+				7113BABD1FF4E3C400806430 /* hitTest(事件响应Demo) */,
 				7113BAB31FF3CD8E00806430 /* 视图移动 */,
 				71FDEFBF1FEBD49F0081B1D7 /* MySelf(我的资料) */,
 				71FDEFB81FE9307C0081B1D7 /* 设置 */,
@@ -723,6 +749,7 @@
 		7109CC001F38175200462EA8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YP;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "银鹏";
 				TargetAttributes = {
@@ -758,6 +785,7 @@
 			files = (
 				71CA5A131FD970B2004AF2F4 /* YPRefurbishView.storyboard in Resources */,
 				71BC1F571FD83C400026117D /* wine.plist in Resources */,
+				71DD987B1FF4ED25000EFEBB /* YPhitTestViewController.storyboard in Resources */,
 				713B0E651FE10E16005AF7DD /* YPShoppingView.storyboard in Resources */,
 				713ECE671FC6EADA0022CDFD /* statuses.plist in Resources */,
 				7153CDC31FAB5CE6003A3375 /* tgs.plist in Resources */,
@@ -797,6 +825,7 @@
 				71BC1F2D1FD7E4EA0026117D /* MASUtilities.h in Sources */,
 				71BC1F2E1FD7E4EA0026117D /* MASViewAttribute.h in Sources */,
 				713B0E691FE148D1005AF7DD /* YPShoppingCell.m in Sources */,
+				71E12B722011A07100170236 /* YPhitButton.m in Sources */,
 				71BC1F2F1FD7E4EA0026117D /* MASViewAttribute.m in Sources */,
 				71BC1F301FD7E4EA0026117D /* MASViewConstraint.h in Sources */,
 				71BC1F311FD7E4EA0026117D /* MASViewConstraint.m in Sources */,
@@ -821,9 +850,11 @@
 				71644F851FC55D6F00A1E9C1 /* MJProperty.m in Sources */,
 				71BC1F511FD813130026117D /* YPWine.m in Sources */,
 				71FDEFC21FEBD5060081B1D7 /* YPMySelfTableViewController.m in Sources */,
+				7113BAC81FF4E6B100806430 /* YPhitTestView.m in Sources */,
 				71644F861FC55D6F00A1E9C1 /* MJPropertyKey.h in Sources */,
 				71644F871FC55D6F00A1E9C1 /* MJPropertyKey.m in Sources */,
 				71644F881FC55D6F00A1E9C1 /* MJPropertyType.h in Sources */,
+				7113BAC01FF4E52000806430 /* YPhitTestViewController.m in Sources */,
 				7113BAB61FF3CDCC00806430 /* YPTransformView.m in Sources */,
 				71644F891FC55D6F00A1E9C1 /* MJPropertyType.m in Sources */,
 				7113BAB21FF10BB000806430 /* YPMySelfTableViewCell.m in Sources */,
