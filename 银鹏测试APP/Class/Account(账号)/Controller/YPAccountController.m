@@ -15,6 +15,7 @@
 #import "YPhitTestViewController.h"
 #import "YPTransformView.h"
 #import "YPSetting.h"
+#import "YPDragerViewController.h"
 @interface YPAccountController ()
 
 @end
@@ -25,7 +26,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 8;
+    return 20;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -70,6 +71,10 @@
         {
             cell.accessoryType  = UITableViewCellAccessoryDisclosureIndicator;
             cell.textLabel.text = @"事件响应Demo";
+        }else if (indexPath.row == 8)
+        {
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            cell.textLabel.text = @"抽屉效果Demo";
         }
     }
     return cell;
@@ -122,6 +127,10 @@
             UIStoryboard *eight = [UIStoryboard storyboardWithName:@"YPhitTestViewController" bundle:nil];
             YPhitTestViewController *hit = [eight instantiateViewControllerWithIdentifier:@"05"];
             [self.navigationController pushViewController:hit animated:YES];
+        }else if (indexPath.row == 8)
+        {
+            YPDragerViewController *nine = [[YPDragerViewController alloc]init];
+            [self.navigationController pushViewController:nine animated:YES];
         };
 }
 }

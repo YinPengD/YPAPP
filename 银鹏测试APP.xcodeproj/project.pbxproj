@@ -93,6 +93,7 @@
 		71D68E761F90F49100932B83 /* YPPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71D68E751F90F49100932B83 /* YPPageView.xib */; };
 		71DD987B1FF4ED25000EFEBB /* YPhitTestViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71DD987A1FF4ED25000EFEBB /* YPhitTestViewController.storyboard */; };
 		71E12B722011A07100170236 /* YPhitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E12B712011A07100170236 /* YPhitButton.m */; };
+		71E12B762013323D00170236 /* YPDragerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E12B752013323D00170236 /* YPDragerViewController.m */; };
 		71EA123C1F454178005B52FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71EA123B1F454178005B52FC /* Assets.xcassets */; };
 		71FDEFB71FE2637D0081B1D7 /* YPShoppingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FDEFB61FE2637D0081B1D7 /* YPShoppingButton.m */; };
 		71FDEFBE1FE931A20081B1D7 /* YPSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FDEFBD1FE931A20081B1D7 /* YPSettingTableViewController.m */; };
@@ -217,6 +218,8 @@
 		71DD987A1FF4ED25000EFEBB /* YPhitTestViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPhitTestViewController.storyboard; sourceTree = "<group>"; };
 		71E12B702011A07100170236 /* YPhitButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YPhitButton.h; path = "银鹏测试APP/Class/其他功能/YPhitButton.h"; sourceTree = SOURCE_ROOT; };
 		71E12B712011A07100170236 /* YPhitButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YPhitButton.m; path = "银鹏测试APP/Class/其他功能/YPhitButton.m"; sourceTree = SOURCE_ROOT; };
+		71E12B742013323D00170236 /* YPDragerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPDragerViewController.h; sourceTree = "<group>"; };
+		71E12B752013323D00170236 /* YPDragerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPDragerViewController.m; sourceTree = "<group>"; };
 		71EA123B1F454178005B52FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71FDEFB51FE2637D0081B1D7 /* YPShoppingButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPShoppingButton.h; sourceTree = "<group>"; };
 		71FDEFB61FE2637D0081B1D7 /* YPShoppingButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPShoppingButton.m; sourceTree = "<group>"; };
@@ -646,6 +649,7 @@
 		71BC1F431FD80A010026117D /* 其他功能 */ = {
 			isa = PBXGroup;
 			children = (
+				71E12B7320132C8400170236 /* 抽屉效果 */,
 				7113BABD1FF4E3C400806430 /* hitTest(事件响应Demo) */,
 				7113BAB31FF3CD8E00806430 /* 视图移动 */,
 				71FDEFBF1FEBD49F0081B1D7 /* MySelf(我的资料) */,
@@ -669,6 +673,15 @@
 				71BC1F501FD813130026117D /* YPWine.m */,
 			);
 			path = "数据刷新";
+			sourceTree = "<group>";
+		};
+		71E12B7320132C8400170236 /* 抽屉效果 */ = {
+			isa = PBXGroup;
+			children = (
+				71E12B742013323D00170236 /* YPDragerViewController.h */,
+				71E12B752013323D00170236 /* YPDragerViewController.m */,
+			);
+			path = "抽屉效果";
 			sourceTree = "<group>";
 		};
 		71FDEFB81FE9307C0081B1D7 /* 设置 */ = {
@@ -878,6 +891,7 @@
 				71FDEFC81FEBDDF90081B1D7 /* YPMySelfTextField.m in Sources */,
 				7153CDBC1FAAB3B0003A3375 /* YPTGViewController.m in Sources */,
 				7199163D1FB1C7A1005056F7 /* YPStatus.m in Sources */,
+				71E12B762013323D00170236 /* YPDragerViewController.m in Sources */,
 				714B26B71FAF343100356E99 /* YPAccountController.m in Sources */,
 				7153CDAC1FA35071003A3375 /* Mode.m in Sources */,
 				7153CDB51FAA042E003A3375 /* YPTGView.m in Sources */,
