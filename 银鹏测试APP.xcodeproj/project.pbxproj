@@ -94,6 +94,10 @@
 		71DD987B1FF4ED25000EFEBB /* YPhitTestViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71DD987A1FF4ED25000EFEBB /* YPhitTestViewController.storyboard */; };
 		71E12B722011A07100170236 /* YPhitButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E12B712011A07100170236 /* YPhitButton.m */; };
 		71E12B762013323D00170236 /* YPDragerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E12B752013323D00170236 /* YPDragerViewController.m */; };
+		71E12B792021753F00170236 /* YPDragerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E12B782021753F00170236 /* YPDragerTableViewController.m */; };
+		71E12B7D2025AD9200170236 /* YPProgresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E12B7C2025AD9200170236 /* YPProgresViewController.m */; };
+		71E12B7F2025ADEB00170236 /* YPProgressView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E12B7E2025ADEB00170236 /* YPProgressView.storyboard */; };
+		71E12B822025AE8700170236 /* YPProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E12B812025AE8700170236 /* YPProgressView.m */; };
 		71EA123C1F454178005B52FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71EA123B1F454178005B52FC /* Assets.xcassets */; };
 		71FDEFB71FE2637D0081B1D7 /* YPShoppingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FDEFB61FE2637D0081B1D7 /* YPShoppingButton.m */; };
 		71FDEFBE1FE931A20081B1D7 /* YPSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FDEFBD1FE931A20081B1D7 /* YPSettingTableViewController.m */; };
@@ -220,6 +224,13 @@
 		71E12B712011A07100170236 /* YPhitButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YPhitButton.m; path = "银鹏测试APP/Class/其他功能/YPhitButton.m"; sourceTree = SOURCE_ROOT; };
 		71E12B742013323D00170236 /* YPDragerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPDragerViewController.h; sourceTree = "<group>"; };
 		71E12B752013323D00170236 /* YPDragerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPDragerViewController.m; sourceTree = "<group>"; };
+		71E12B772021753F00170236 /* YPDragerTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPDragerTableViewController.h; sourceTree = "<group>"; };
+		71E12B782021753F00170236 /* YPDragerTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPDragerTableViewController.m; sourceTree = "<group>"; };
+		71E12B7B2025AD9200170236 /* YPProgresViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPProgresViewController.h; sourceTree = "<group>"; };
+		71E12B7C2025AD9200170236 /* YPProgresViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPProgresViewController.m; sourceTree = "<group>"; };
+		71E12B7E2025ADEB00170236 /* YPProgressView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPProgressView.storyboard; sourceTree = "<group>"; };
+		71E12B802025AE8700170236 /* YPProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPProgressView.h; sourceTree = "<group>"; };
+		71E12B812025AE8700170236 /* YPProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPProgressView.m; sourceTree = "<group>"; };
 		71EA123B1F454178005B52FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71FDEFB51FE2637D0081B1D7 /* YPShoppingButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPShoppingButton.h; sourceTree = "<group>"; };
 		71FDEFB61FE2637D0081B1D7 /* YPShoppingButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPShoppingButton.m; sourceTree = "<group>"; };
@@ -649,6 +660,7 @@
 		71BC1F431FD80A010026117D /* 其他功能 */ = {
 			isa = PBXGroup;
 			children = (
+				71E12B7A2025AC7C00170236 /* 进度条 */,
 				71E12B7320132C8400170236 /* 抽屉效果 */,
 				7113BABD1FF4E3C400806430 /* hitTest(事件响应Demo) */,
 				7113BAB31FF3CD8E00806430 /* 视图移动 */,
@@ -680,8 +692,22 @@
 			children = (
 				71E12B742013323D00170236 /* YPDragerViewController.h */,
 				71E12B752013323D00170236 /* YPDragerViewController.m */,
+				71E12B772021753F00170236 /* YPDragerTableViewController.h */,
+				71E12B782021753F00170236 /* YPDragerTableViewController.m */,
 			);
 			path = "抽屉效果";
+			sourceTree = "<group>";
+		};
+		71E12B7A2025AC7C00170236 /* 进度条 */ = {
+			isa = PBXGroup;
+			children = (
+				71E12B7B2025AD9200170236 /* YPProgresViewController.h */,
+				71E12B7C2025AD9200170236 /* YPProgresViewController.m */,
+				71E12B7E2025ADEB00170236 /* YPProgressView.storyboard */,
+				71E12B802025AE8700170236 /* YPProgressView.h */,
+				71E12B812025AE8700170236 /* YPProgressView.m */,
+			);
+			path = "进度条";
 			sourceTree = "<group>";
 		};
 		71FDEFB81FE9307C0081B1D7 /* 设置 */ = {
@@ -797,6 +823,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71CA5A131FD970B2004AF2F4 /* YPRefurbishView.storyboard in Resources */,
+				71E12B7F2025ADEB00170236 /* YPProgressView.storyboard in Resources */,
 				71BC1F571FD83C400026117D /* wine.plist in Resources */,
 				71DD987B1FF4ED25000EFEBB /* YPhitTestViewController.storyboard in Resources */,
 				713B0E651FE10E16005AF7DD /* YPShoppingView.storyboard in Resources */,
@@ -824,6 +851,7 @@
 				71BC1F231FD7E4EA0026117D /* MASCompositeConstraint.h in Sources */,
 				71BC1F241FD7E4EA0026117D /* MASCompositeConstraint.m in Sources */,
 				71BC1F251FD7E4EA0026117D /* MASConstraint+Private.h in Sources */,
+				71E12B7D2025AD9200170236 /* YPProgresViewController.m in Sources */,
 				71BC1F261FD7E4EA0026117D /* MASConstraint.h in Sources */,
 				71BC1F271FD7E4EA0026117D /* MASConstraint.m in Sources */,
 				71BC1F281FD7E4EA0026117D /* MASConstraintMaker.h in Sources */,
@@ -839,6 +867,7 @@
 				71BC1F2E1FD7E4EA0026117D /* MASViewAttribute.h in Sources */,
 				713B0E691FE148D1005AF7DD /* YPShoppingCell.m in Sources */,
 				71E12B722011A07100170236 /* YPhitButton.m in Sources */,
+				71E12B822025AE8700170236 /* YPProgressView.m in Sources */,
 				71BC1F2F1FD7E4EA0026117D /* MASViewAttribute.m in Sources */,
 				71BC1F301FD7E4EA0026117D /* MASViewConstraint.h in Sources */,
 				71BC1F311FD7E4EA0026117D /* MASViewConstraint.m in Sources */,
@@ -891,6 +920,7 @@
 				71FDEFC81FEBDDF90081B1D7 /* YPMySelfTextField.m in Sources */,
 				7153CDBC1FAAB3B0003A3375 /* YPTGViewController.m in Sources */,
 				7199163D1FB1C7A1005056F7 /* YPStatus.m in Sources */,
+				71E12B792021753F00170236 /* YPDragerTableViewController.m in Sources */,
 				71E12B762013323D00170236 /* YPDragerViewController.m in Sources */,
 				714B26B71FAF343100356E99 /* YPAccountController.m in Sources */,
 				7153CDAC1FA35071003A3375 /* Mode.m in Sources */,

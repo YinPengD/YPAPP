@@ -7,7 +7,7 @@
 //
 
 #import "YPDragerViewController.h"
-
+#import "YPDragerTableViewController.h"
 #define screenW [UIScreen mainScreen].bounds.size.width
 @interface YPDragerViewController ()
 /** 左视图 */
@@ -16,7 +16,7 @@
 @property(nonatomic,weak) UIView  *rightV;
 /** 主视图 */
 @property(nonatomic,weak) UIView  *mainV;
-
+//@property(nonatomic,weak,readonly) UIView  *mainV; //readonly的本质是不让重写set方法，禁止子类修改父类原有的属性方法
 @end
 
 @implementation YPDragerViewController
@@ -31,6 +31,11 @@
     //添加点按手势
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tap)];
     [self.view addGestureRecognizer:tap];
+    // 添加TableViewController
+    YPDragerTableViewController *vc1 = [[YPDragerTableViewController alloc]init];
+    vc1.view.frame = self.mainV.bounds;
+    [self.mainV addSubview:vc1.view];
+    //当一个控制器的View添加到另一个控制器的view上的时候，那此时view所在的控制器也应该成为上一个控制的子控制器。  //[self addChildViewController:vc1];
 }
 -(void)tap{
     [UIView animateWithDuration:0.5 animations:^{

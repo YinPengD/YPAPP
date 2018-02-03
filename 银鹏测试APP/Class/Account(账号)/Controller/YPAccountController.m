@@ -13,6 +13,7 @@
 #import "YPSettingTableViewController.h"
 #import "YPMySelfTableViewController.h"
 #import "YPhitTestViewController.h"
+#import "YPProgresViewController.h"
 #import "YPTransformView.h"
 #import "YPSetting.h"
 #import "YPDragerViewController.h"
@@ -75,6 +76,10 @@
         {
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell.textLabel.text = @"抽屉效果Demo";
+        }else if (indexPath.row == 9)
+        {
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            cell.textLabel.text = @"进度条Demo";
         }
     }
     return cell;
@@ -131,6 +136,11 @@
         {
             YPDragerViewController *nine = [[YPDragerViewController alloc]init];
             [self.navigationController pushViewController:nine animated:YES];
+        }else if (indexPath.row == 9)
+        {
+            UIStoryboard *ten = [UIStoryboard storyboardWithName:@"YPProgressView" bundle:nil];
+            YPProgresViewController *hit = [ten instantiateViewControllerWithIdentifier:@"06"];
+            [self.navigationController pushViewController:hit animated:YES];
         };
 }
 }
