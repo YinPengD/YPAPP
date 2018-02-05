@@ -17,7 +17,7 @@
 }
 - (void)drawRect:(CGRect)rect {
     //划弧
-    // ------获取上下文
+    // ------1.获取上下文
     CGContextRef ctx  = UIGraphicsGetCurrentContext();
     // ------2.描述路径
     CGPoint center = CGPointMake(rect.size.width * 0.5, rect.size.height * 0.5);
