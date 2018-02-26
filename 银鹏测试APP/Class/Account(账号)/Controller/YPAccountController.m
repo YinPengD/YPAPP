@@ -14,6 +14,7 @@
 #import "YPMySelfTableViewController.h"
 #import "YPhitTestViewController.h"
 #import "YPProgresViewController.h"
+#import "YPClockViewController.h"
 #import "YPTransformView.h"
 #import "YPSetting.h"
 #import "YPDragerViewController.h"
@@ -80,6 +81,10 @@
         {
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell.textLabel.text = @"进度条Demo";
+        }else if (indexPath.row == 10)
+        {
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            cell.textLabel.text = @"时钟Demo";
         }
     }
     return cell;
@@ -140,6 +145,11 @@
         {
             UIStoryboard *ten = [UIStoryboard storyboardWithName:@"YPProgressView" bundle:nil];
             YPProgresViewController *hit = [ten instantiateViewControllerWithIdentifier:@"06"];
+            [self.navigationController pushViewController:hit animated:YES];
+        }else if (indexPath.row == 10)
+        {
+            UIStoryboard *eleven = [UIStoryboard storyboardWithName:@"YPClockView" bundle:nil];
+            YPClockViewController *hit = [eleven instantiateViewControllerWithIdentifier:@"07"];
             [self.navigationController pushViewController:hit animated:YES];
         };
 }

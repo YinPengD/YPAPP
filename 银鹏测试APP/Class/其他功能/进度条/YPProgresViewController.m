@@ -34,7 +34,7 @@
     // 5.结束上下文
     UIGraphicsEndImageContext();
     self.imageV.image = newImage;
-    
+    [self.imageV.layer setValue:@(M_PI) forKey:@"transform.rotation"];
 
 }
 - (IBAction)valuechange:(UISlider *)sender {

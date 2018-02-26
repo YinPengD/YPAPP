@@ -55,6 +55,9 @@
 		71644F911FC55D6F00A1E9C1 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 714B26AA1FAC4A8B00356E99 /* NSObject+MJProperty.m */; };
 		71644F921FC55D6F00A1E9C1 /* NSString+MJExtension.h in Sources */ = {isa = PBXBuildFile; fileRef = 714B26AB1FAC4A8B00356E99 /* NSString+MJExtension.h */; };
 		71644F931FC55D6F00A1E9C1 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 714B26AC1FAC4A8B00356E99 /* NSString+MJExtension.m */; };
+		7181998F204439DA007C764A /* YPClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7181998E204439DA007C764A /* YPClockViewController.m */; };
+		71819991204439F6007C764A /* YPClockView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71819990204439F6007C764A /* YPClockView.storyboard */; };
+		7181999220443E3E007C764A /* YPClockViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 7181998D204439DA007C764A /* YPClockViewController.h */; };
 		7199163A1FB1C739005056F7 /* YPStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 719916391FB1C739005056F7 /* YPStatusViewController.m */; };
 		7199163D1FB1C7A1005056F7 /* YPStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 7199163C1FB1C7A1005056F7 /* YPStatus.m */; };
 		719916411FB1C99F005056F7 /* YPStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 719916401FB1C99F005056F7 /* YPStatusCell.m */; };
@@ -175,6 +178,9 @@
 		7153CDBA1FAAB3B0003A3375 /* YPTGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPTGViewController.h; sourceTree = "<group>"; };
 		7153CDBB1FAAB3B0003A3375 /* YPTGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPTGViewController.m; sourceTree = "<group>"; };
 		7153CDC21FAB5CCB003A3375 /* tgs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = tgs.plist; sourceTree = "<group>"; };
+		7181998D204439DA007C764A /* YPClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPClockViewController.h; sourceTree = "<group>"; };
+		7181998E204439DA007C764A /* YPClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPClockViewController.m; sourceTree = "<group>"; };
+		71819990204439F6007C764A /* YPClockView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPClockView.storyboard; sourceTree = "<group>"; };
 		719916381FB1C739005056F7 /* YPStatusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPStatusViewController.h; sourceTree = "<group>"; };
 		719916391FB1C739005056F7 /* YPStatusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPStatusViewController.m; sourceTree = "<group>"; };
 		7199163B1FB1C7A0005056F7 /* YPStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPStatus.h; sourceTree = "<group>"; };
@@ -359,6 +365,16 @@
 				714B26AC1FAC4A8B00356E99 /* NSString+MJExtension.m */,
 			);
 			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		7181998C20443996007C764A /* 时钟Demo */ = {
+			isa = PBXGroup;
+			children = (
+				7181998D204439DA007C764A /* YPClockViewController.h */,
+				7181998E204439DA007C764A /* YPClockViewController.m */,
+				71819990204439F6007C764A /* YPClockView.storyboard */,
+			);
+			path = "时钟Demo";
 			sourceTree = "<group>";
 		};
 		71BC1EA31FD7DB320026117D /* Class */ = {
@@ -660,6 +676,7 @@
 		71BC1F431FD80A010026117D /* 其他功能 */ = {
 			isa = PBXGroup;
 			children = (
+				7181998C20443996007C764A /* 时钟Demo */,
 				71E12B7A2025AC7C00170236 /* 进度条 */,
 				71E12B7320132C8400170236 /* 抽屉效果 */,
 				7113BABD1FF4E3C400806430 /* hitTest(事件响应Demo) */,
@@ -835,6 +852,7 @@
 				71FDEFD31FEBEE450081B1D7 /* CountryView.xib in Resources */,
 				713ECAAD1FD030B900BBA43D /* LaunchScreen.storyboard in Resources */,
 				714B26BE1FAF3BB600356E99 /* YPSetting.storyboard in Resources */,
+				71819991204439F6007C764A /* YPClockView.storyboard in Resources */,
 				7109CC291F3859C500462EA8 /* MyMusicViewController.xib in Resources */,
 				71EA123C1F454178005B52FC /* Assets.xcassets in Resources */,
 			);
@@ -847,6 +865,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7181999220443E3E007C764A /* YPClockViewController.h in Sources */,
 				713B0E661FE11997005AF7DD /* YPShoppingViewController.h in Sources */,
 				71BC1F231FD7E4EA0026117D /* MASCompositeConstraint.h in Sources */,
 				71BC1F241FD7E4EA0026117D /* MASCompositeConstraint.m in Sources */,
@@ -876,6 +895,7 @@
 				71BC1F341FD7E4EA0026117D /* NSArray+MASShorthandAdditions.h in Sources */,
 				71BC1F351FD7E4EA0026117D /* NSLayoutConstraint+MASDebugAdditions.h in Sources */,
 				71BC1F361FD7E4EA0026117D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				7181998F204439DA007C764A /* YPClockViewController.m in Sources */,
 				71BC1F371FD7E4EA0026117D /* View+MASAdditions.h in Sources */,
 				71BC1F421FD7EF370026117D /* YPDiscoverTabBarViewController.m in Sources */,
 				71BC1F381FD7E4EA0026117D /* View+MASAdditions.m in Sources */,
