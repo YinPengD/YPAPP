@@ -15,6 +15,7 @@
 #import "YPhitTestViewController.h"
 #import "YPProgresViewController.h"
 #import "YPClockViewController.h"
+#import "YPDownloadViewController.h"
 #import "YPTransformView.h"
 #import "YPSetting.h"
 #import "YPDragerViewController.h"
@@ -85,6 +86,10 @@
         {
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell.textLabel.text = @"时钟Demo";
+        }else if (indexPath.row == 11)
+        {
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            cell.textLabel.text = @"多图下载";
         }
     }
     return cell;
@@ -150,6 +155,11 @@
         {
             UIStoryboard *eleven = [UIStoryboard storyboardWithName:@"YPClockView" bundle:nil];
             YPClockViewController *hit = [eleven instantiateViewControllerWithIdentifier:@"07"];
+            [self.navigationController pushViewController:hit animated:YES];
+        }else if (indexPath.row  == 11)
+        {
+            UIStoryboard *twelve = [UIStoryboard storyboardWithName:@"DownloadView" bundle:nil];
+            YPDownloadViewController *hit = [twelve instantiateViewControllerWithIdentifier:@"08"];
             [self.navigationController pushViewController:hit animated:YES];
         };
 }

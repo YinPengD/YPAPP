@@ -87,6 +87,7 @@
 // ------用户开始拖拽后，结束定时器
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
     [self endTimer];
+    NSLog(@"YES");
 }
 // ------用户结束拖拽后，开启定时器
 -(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{

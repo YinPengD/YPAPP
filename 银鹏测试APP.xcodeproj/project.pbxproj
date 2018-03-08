@@ -18,6 +18,7 @@
 		7113BABC1FF3D5AB00806430 /* YPTransformView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7113BABB1FF3D5AB00806430 /* YPTransformView.storyboard */; };
 		7113BAC01FF4E52000806430 /* YPhitTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7113BABF1FF4E52000806430 /* YPhitTestViewController.m */; };
 		7113BAC81FF4E6B100806430 /* YPhitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7113BAC71FF4E6B100806430 /* YPhitTestView.m */; };
+		71182F65204C27B800945AFB /* YPUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71182F64204C27B800945AFB /* YPUIScrollView.m */; };
 		713B0E631FE10DF0005AF7DD /* YPShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713B0E621FE10DF0005AF7DD /* YPShoppingViewController.m */; };
 		713B0E651FE10E16005AF7DD /* YPShoppingView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713B0E641FE10E16005AF7DD /* YPShoppingView.storyboard */; };
 		713B0E661FE11997005AF7DD /* YPShoppingViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 713B0E611FE10DF0005AF7DD /* YPShoppingViewController.h */; };
@@ -27,6 +28,9 @@
 		714B26B71FAF343100356E99 /* YPAccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 714B26B61FAF343100356E99 /* YPAccountController.m */; };
 		714B26BC1FAF3B9700356E99 /* YPSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 714B26BB1FAF3B9700356E99 /* YPSetting.m */; };
 		714B26BE1FAF3BB600356E99 /* YPSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714B26BD1FAF3BB600356E99 /* YPSetting.storyboard */; };
+		715174F7204EC4CE00583965 /* YPDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 715174F6204EC4CE00583965 /* YPDownloadViewController.m */; };
+		715174F9204EC50100583965 /* DownloadView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 715174F8204EC50100583965 /* DownloadView.storyboard */; };
+		715174FD204ECB0B00583965 /* YPDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 715174FC204ECB0B00583965 /* YPDownload.m */; };
 		7153CDA91FA34F17003A3375 /* dict_mode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7153CDA81FA34F17003A3375 /* dict_mode.m */; };
 		7153CDAC1FA35071003A3375 /* Mode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7153CDAB1FA35071003A3375 /* Mode.m */; };
 		7153CDAE1FA488D0003A3375 /* list.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7153CDAD1FA488D0003A3375 /* list.plist */; };
@@ -58,6 +62,8 @@
 		7181998F204439DA007C764A /* YPClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7181998E204439DA007C764A /* YPClockViewController.m */; };
 		71819991204439F6007C764A /* YPClockView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71819990204439F6007C764A /* YPClockView.storyboard */; };
 		7181999220443E3E007C764A /* YPClockViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 7181998D204439DA007C764A /* YPClockViewController.h */; };
+		718C28CB20500B58002DEA65 /* YPDownloadViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 715174F5204EC4CE00583965 /* YPDownloadViewController.h */; };
+		718C28CC20501503002DEA65 /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 715174FA204EC96400583965 /* apps.plist */; };
 		7199163A1FB1C739005056F7 /* YPStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 719916391FB1C739005056F7 /* YPStatusViewController.m */; };
 		7199163D1FB1C7A1005056F7 /* YPStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 7199163C1FB1C7A1005056F7 /* YPStatus.m */; };
 		719916411FB1C99F005056F7 /* YPStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 719916401FB1C99F005056F7 /* YPStatusCell.m */; };
@@ -133,6 +139,8 @@
 		7113BABF1FF4E52000806430 /* YPhitTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPhitTestViewController.m; sourceTree = "<group>"; };
 		7113BAC61FF4E6B100806430 /* YPhitTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPhitTestView.h; sourceTree = "<group>"; };
 		7113BAC71FF4E6B100806430 /* YPhitTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPhitTestView.m; sourceTree = "<group>"; };
+		71182F63204C27B800945AFB /* YPUIScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPUIScrollView.h; sourceTree = "<group>"; };
+		71182F64204C27B800945AFB /* YPUIScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPUIScrollView.m; sourceTree = "<group>"; };
 		713B0E611FE10DF0005AF7DD /* YPShoppingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPShoppingViewController.h; sourceTree = "<group>"; };
 		713B0E621FE10DF0005AF7DD /* YPShoppingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPShoppingViewController.m; sourceTree = "<group>"; };
 		713B0E641FE10E16005AF7DD /* YPShoppingView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPShoppingView.storyboard; sourceTree = "<group>"; };
@@ -166,6 +174,12 @@
 		714B26BA1FAF3B9700356E99 /* YPSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPSetting.h; sourceTree = "<group>"; };
 		714B26BB1FAF3B9700356E99 /* YPSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPSetting.m; sourceTree = "<group>"; };
 		714B26BD1FAF3BB600356E99 /* YPSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YPSetting.storyboard; sourceTree = "<group>"; };
+		715174F5204EC4CE00583965 /* YPDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPDownloadViewController.h; sourceTree = "<group>"; };
+		715174F6204EC4CE00583965 /* YPDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPDownloadViewController.m; sourceTree = "<group>"; };
+		715174F8204EC50100583965 /* DownloadView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DownloadView.storyboard; sourceTree = "<group>"; };
+		715174FA204EC96400583965 /* apps.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
+		715174FB204ECB0B00583965 /* YPDownload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPDownload.h; sourceTree = "<group>"; };
+		715174FC204ECB0B00583965 /* YPDownload.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPDownload.m; sourceTree = "<group>"; };
 		7153CDA71FA34F17003A3375 /* dict_mode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dict_mode.h; sourceTree = "<group>"; };
 		7153CDA81FA34F17003A3375 /* dict_mode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dict_mode.m; sourceTree = "<group>"; };
 		7153CDAA1FA35071003A3375 /* Mode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mode.h; sourceTree = "<group>"; };
@@ -367,6 +381,19 @@
 			path = MJExtension;
 			sourceTree = "<group>";
 		};
+		715174F4204EC42D00583965 /* 多图下载 */ = {
+			isa = PBXGroup;
+			children = (
+				715174F5204EC4CE00583965 /* YPDownloadViewController.h */,
+				715174F6204EC4CE00583965 /* YPDownloadViewController.m */,
+				715174FB204ECB0B00583965 /* YPDownload.h */,
+				715174FC204ECB0B00583965 /* YPDownload.m */,
+				715174F8204EC50100583965 /* DownloadView.storyboard */,
+				715174FA204EC96400583965 /* apps.plist */,
+			);
+			path = "多图下载";
+			sourceTree = "<group>";
+		};
 		7181998C20443996007C764A /* 时钟Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,6 +441,8 @@
 		71BC1EA61FD7DC8C0026117D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				71182F63204C27B800945AFB /* YPUIScrollView.h */,
+				71182F64204C27B800945AFB /* YPUIScrollView.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -676,6 +705,7 @@
 		71BC1F431FD80A010026117D /* 其他功能 */ = {
 			isa = PBXGroup;
 			children = (
+				715174F4204EC42D00583965 /* 多图下载 */,
 				7181998C20443996007C764A /* 时钟Demo */,
 				71E12B7A2025AC7C00170236 /* 进度条 */,
 				71E12B7320132C8400170236 /* 抽屉效果 */,
@@ -839,6 +869,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				718C28CC20501503002DEA65 /* apps.plist in Resources */,
 				71CA5A131FD970B2004AF2F4 /* YPRefurbishView.storyboard in Resources */,
 				71E12B7F2025ADEB00170236 /* YPProgressView.storyboard in Resources */,
 				71BC1F571FD83C400026117D /* wine.plist in Resources */,
@@ -848,6 +879,7 @@
 				7153CDC31FAB5CE6003A3375 /* tgs.plist in Resources */,
 				7113BABC1FF3D5AB00806430 /* YPTransformView.storyboard in Resources */,
 				7153CDAE1FA488D0003A3375 /* list.plist in Resources */,
+				715174F9204EC50100583965 /* DownloadView.storyboard in Resources */,
 				71D68E761F90F49100932B83 /* YPPageView.xib in Resources */,
 				71FDEFD31FEBEE450081B1D7 /* CountryView.xib in Resources */,
 				713ECAAD1FD030B900BBA43D /* LaunchScreen.storyboard in Resources */,
@@ -865,6 +897,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				718C28CB20500B58002DEA65 /* YPDownloadViewController.h in Sources */,
 				7181999220443E3E007C764A /* YPClockViewController.h in Sources */,
 				713B0E661FE11997005AF7DD /* YPShoppingViewController.h in Sources */,
 				71BC1F231FD7E4EA0026117D /* MASCompositeConstraint.h in Sources */,
@@ -883,8 +916,10 @@
 				71BC1F2B1FD7E4EA0026117D /* MASLayoutConstraint.m in Sources */,
 				71BC1F2C1FD7E4EA0026117D /* Masonry.h in Sources */,
 				71BC1F2D1FD7E4EA0026117D /* MASUtilities.h in Sources */,
+				71182F65204C27B800945AFB /* YPUIScrollView.m in Sources */,
 				71BC1F2E1FD7E4EA0026117D /* MASViewAttribute.h in Sources */,
 				713B0E691FE148D1005AF7DD /* YPShoppingCell.m in Sources */,
+				715174F7204EC4CE00583965 /* YPDownloadViewController.m in Sources */,
 				71E12B722011A07100170236 /* YPhitButton.m in Sources */,
 				71E12B822025AE8700170236 /* YPProgressView.m in Sources */,
 				71BC1F2F1FD7E4EA0026117D /* MASViewAttribute.m in Sources */,
@@ -950,6 +985,7 @@
 				7102D4481F8F7C250018422C /* YPPageView.m in Sources */,
 				7109CC281F3859C500462EA8 /* MyMusicViewController.m in Sources */,
 				7109CC0D1F38175200462EA8 /* main.m in Sources */,
+				715174FD204ECB0B00583965 /* YPDownload.m in Sources */,
 				7109CC2D1F385A2900462EA8 /* DiscoverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

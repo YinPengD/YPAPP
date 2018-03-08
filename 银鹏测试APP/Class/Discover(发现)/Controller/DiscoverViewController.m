@@ -9,8 +9,12 @@
 #import "DiscoverViewController.h"
 #import "YPDiscoverTabBarViewController.h"
 #import "YPPageView.h"
+#import "YPUIScrollView.h"
+#import "YPDownloadViewController.h"
 #import "Masonry.h"
-@interface DiscoverViewController ()
+@interface DiscoverViewController ()<UIScrollViewDelegate>
+/** UIScrollView */
+@property(nonatomic,weak) UIScrollView  *YPScrollView;
 @end
 @implementation DiscoverViewController
 
@@ -59,24 +63,41 @@
     segmented.frame = CGRectMake(0, 64, [[UIScreen mainScreen]bounds].size.width, 30);
     [self.view addSubview:segmented];
     
-    // ------创建一个YPPageView类
-    YPPageView *pageView =  [YPPageView pageView]; //注意：这样的写法存在有性能问题1.如果照片数量大了，加载的图片数量就过多了2.创建的image过多
-    pageView.imageNames  = @[@"img_01",@"img_02",@"img_03",@"img_04"];
-    [self.view addSubview:pageView];
-    // 对pageView进行约束
-    pageView.translatesAutoresizingMaskIntoConstraints  = NO;
-    [pageView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.right.left.offset(0);
-        make.top.mas_equalTo(segmented.mas_bottom).offset(0);
-        make.bottom.mas_equalTo(segmented.mas_bottom).offset(134);
-    }];
-    // -----设置View背景默认为黑色
-    self.view.backgroundColor = [UIColor whiteColor];
+
     // ------创建Discover界面的TabBar切换选项卡
     /*
     YPDiscoverTabBarViewController *disBar  = [[YPDiscoverTabBarViewController alloc]init];
     disBar.
      */
+    YPUIScrollView *YPscr = [[YPUIScrollView alloc] initWithFrame:CGRectMake(0, 94, 320, 450)];
+    YPscr.contentSize =  CGSizeMake(320, 500);
+    YPscr.backgroundColor = [UIColor redColor];
+    YPscr.bounces = YES;
+    YPscr.showsHorizontalScrollIndicator = YES;
+    //YPscr.showsVerticalScrollIndicator = YES;
+    [self.view addSubview:YPscr];
+    
+    // ------创建一个YPPageView类'
+    
+    YPPageView *pageView =  [YPPageView pageView]; //注意：这样的写法存在有性能问题1.如果照片数量大了，加载的图片数量就过多了2.创建的image过多
+    pageView.imageNames  = @[@"img_01",@"img_02",@"img_03",@"img_04"];
+    [YPscr addSubview:pageView];
+    // 对pageView进行约束
+    pageView.translatesAutoresizingMaskIntoConstraints  = NO;
+    [pageView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.right.left.offset(0);
+        make.top.mas_equalTo(YPscr.mas_top).offset(0);
+        make.bottom.mas_equalTo(YPscr.mas_top).offset(134);
+    }];
+    // -----设置View背景默认为黑色
+    self.view.backgroundColor = [UIColor whiteColor];
+    if(pageView.userInteractionEnabled == NO || pageView.hidden == YES || pageView.alpha <= 0.01)
+        NSLog(@"NO");
+    
+    
+    
+    
+    
 }
 #pragma mark - *************** 监控点击与跳转事件
 //监控按钮1的事件
@@ -84,6 +105,12 @@
     NSLog(@"%s",__func__);
 }
 -(void)btn2Click{
+    NSLog(@"%s",__func__);
+}
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"%s",__func__);
+}
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
     NSLog(@"%s",__func__);
 }
 /*
